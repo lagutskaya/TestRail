@@ -3,7 +3,6 @@ package pages.UI;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import org.openqa.selenium.WebDriver;
 import pages.PageSettings.BasePage;
 
 import static com.codeborne.selenide.Condition.visible;
@@ -16,10 +15,6 @@ public class LoginPage extends BasePage {
     private final SelenideElement
             LOGIN_FIELD = $("[data-testid='loginIdName']"),
             PASSWORD_FIELD = $("[data-testid='loginPasswordFormDialog']");
-
-    public LoginPage(WebDriver driver) {
-        super();
-    }
 
     @Step("Open Login page")
     public LoginPage openPage() {

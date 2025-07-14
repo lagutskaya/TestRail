@@ -3,7 +3,6 @@ package pages.UI;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import org.openqa.selenium.WebDriver;
 import pages.PageSettings.BasePage;
 
 import static com.codeborne.selenide.Condition.visible;
@@ -18,9 +17,6 @@ public class ProjectPage extends BasePage {
             PROJECT_TITLE = $("[data-testid='testCaseContentHeaderTitle']");
     private final String OPEN_PROJECT_PATTERN = "//a[contains(@href,'/projects/overview/%d') and text()='%s']]";
 
-    public ProjectPage(WebDriver driver) {
-        super();
-    }
 
     @Step("Open project page")
     public ProjectPage isPageOpened() {

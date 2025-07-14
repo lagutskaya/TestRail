@@ -3,7 +3,6 @@ package pages.UI;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;
-import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
@@ -15,9 +14,6 @@ public class TestCasesPage {
             TEST_CASES_BUTTON = $("[data-testid='navigateToCasesButton']"),
             TEST_CASES_TITLE = $("[data-testid='testCaseContentHeaderTitle']"),
             ADD_SECTION_BUTTON = $("[data-testid='addSectionInline']");
-
-    public TestCasesPage(WebDriver driver) {
-    }
 
     @Step("Test Cases page is opened")
     public TestCasesPage isPageOpened() {

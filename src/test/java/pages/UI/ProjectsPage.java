@@ -3,7 +3,6 @@ package pages.UI;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -15,8 +14,6 @@ public class ProjectsPage {
             SUCCESS_CREATED_PAGE_MESSAGE = $("[data-testid='messageSuccessDivBox']"),
             PROJECTS_TITLE = $("[data-testid='testCaseContentHeaderTitle']");
 
-    public ProjectsPage(WebDriver driver) {
-    }
 
     @Step("Projects page is opened")
     public ProjectsPage isPageOpened() {

@@ -6,7 +6,6 @@ import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 
@@ -25,8 +24,6 @@ public class AddProjectPage {
             MODAL_WINDOW = $(By.id("pendo-close-guide-b5501343")),
             CREATE_PROJECT_BUTTON = $("[data-testid='addEditProjectAddButton']");
 
-    public AddProjectPage(WebDriver driver) {
-    }
 
     @Step("Click on 'Add new project' button")
     public AddProjectPage clickOnAddNewProjectButton() {

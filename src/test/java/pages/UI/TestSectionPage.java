@@ -4,7 +4,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import pages.PageSettings.BasePage;
 
 import static com.codeborne.selenide.Condition.visible;
@@ -26,10 +25,6 @@ public class TestSectionPage extends BasePage {
             CASE_TITLE_SUBMIT = $("[data-testid='iconButtonAccept']");
     private final String TEST_CASE_TITLE_PATTERN = "//*[@data-testid='sectionCaseTitle' and text()='%s']";
 
-
-    public TestSectionPage(WebDriver driver) {
-        super();
-    }
 
     @Step("Test section page is opened")
     public TestSectionPage isPageOpened() {

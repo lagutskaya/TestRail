@@ -3,7 +3,6 @@ package pages.UI;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import org.openqa.selenium.WebDriver;
 import pages.PageSettings.BasePage;
 
 import static com.codeborne.selenide.Condition.*;
@@ -16,10 +15,6 @@ public class DashboardPage extends BasePage {
             DASHBOARD_TITLE = $("[data-testid='testCaseContentHeaderTitle']"),
             BACK_TO_DASHBOARD_BUTTON = $("[data-testid='backToDashboardButton']");
     private final String PROJECT_NAME_PATTERN = "//a[text()='%s']";
-
-    public DashboardPage(WebDriver driver) {
-        super();
-    }
 
     @Step("Open Dashboard page")
     public DashboardPage openDashboardPage() {
