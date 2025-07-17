@@ -1,4 +1,4 @@
-package pages.UI;
+package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -12,7 +12,8 @@ public class ProjectsPage {
 
     private final SelenideElement
             SUCCESS_CREATED_PAGE_MESSAGE = $("[data-testid='messageSuccessDivBox']"),
-            PROJECTS_TITLE = $("[data-testid='testCaseContentHeaderTitle']");
+            PROJECTS_TITLE = $("[data-testid='testCaseContentHeaderTitle']"),
+            ERROR_MESSAGE = $("[class='message message-error']");
 
 
     @Step("Projects page is opened")
@@ -25,6 +26,13 @@ public class ProjectsPage {
     @Step("Project is created")
     public boolean projectIsCreated() {
         SUCCESS_CREATED_PAGE_MESSAGE.shouldBe(visible);
+        log.info("Project is created");
+        return true;
+    }
+
+    @Step("Project isn't created")
+    public boolean projectIsNotCreated() {
+        ERROR_MESSAGE.shouldBe(visible);
         log.info("Project is created");
         return true;
     }

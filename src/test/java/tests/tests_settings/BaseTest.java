@@ -1,4 +1,4 @@
-package tests.TestSettings;
+package tests.tests_settings;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -7,8 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import org.testng.asserts.SoftAssert;
-import pages.UI.*;
+import pages.ui.*;
 
 public class BaseTest {
 
@@ -20,8 +19,8 @@ public class BaseTest {
     protected ProjectPage projectPage;
     protected TestCasesPage testCasesPage;
     protected TestSectionPage testSectionPage;
-
-    SoftAssert softAssert = new SoftAssert();
+    protected AdminPage adminPage;
+    protected HeaderPage headerPage;
 
     @Parameters({"browser"})
     @BeforeMethod(alwaysRun = true, description = "Открытие браузера")
@@ -40,6 +39,8 @@ public class BaseTest {
         projectPage = new ProjectPage();
         testCasesPage = new TestCasesPage();
         testSectionPage = new TestSectionPage();
+        adminPage = new AdminPage();
+        headerPage = new HeaderPage();
     }
 
     @AfterMethod(alwaysRun = true, description = "Закрытие браузера")

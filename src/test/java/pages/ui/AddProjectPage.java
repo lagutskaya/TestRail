@@ -1,4 +1,4 @@
-package pages.UI;
+package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ex.ElementNotFound;
@@ -28,10 +28,10 @@ public class AddProjectPage {
     @Step("Click on 'Add new project' button")
     public AddProjectPage clickOnAddNewProjectButton() {
         try {
-            log.info("Modal window with ads is opened");
             (MODAL_WINDOW)
                     .shouldBe(visible, Duration.ofSeconds(3))
                     .click();
+            log.info("Modal window with ads is opened");
         } catch (ElementNotFound | TimeoutException e) {
             log.info("Modal window with ads is closed");
         }

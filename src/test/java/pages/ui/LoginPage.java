@@ -1,9 +1,9 @@
-package pages.UI;
+package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import pages.PageSettings.BasePage;
+import pages.page_settings.BasePage;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -19,13 +19,14 @@ public class LoginPage extends BasePage {
     @Step("Open Login page")
     public LoginPage openPage() {
         open(base_url);
+        log.info("Open Login page");
         return this;
     }
 
-    @Step("Login page is opened")
+    @Step("Login page is open")
     public LoginPage isPageOpened() {
         LOGIN_FIELD.shouldBe(visible);
-        log.info("Login page is opened");
+        log.info("Login page is open");
         return this;
     }
 
@@ -33,7 +34,7 @@ public class LoginPage extends BasePage {
     public LoginPage login() {
         LOGIN_FIELD.setValue(user);
         PASSWORD_FIELD.setValue(password).submit();
-        log.info("User is login");
+        log.info("User is log in");
         return this;
     }
 }
