@@ -23,7 +23,6 @@ public class AdminPage extends BasePage {
             OK_BUTTON_IN_MODAL_FOR_DELETE_PROJECT = $("[data-testid='caseFieldsTabDeleteDialogButtonOk']"),
             SUCCESS_MESSAGE = $("[data-testid='messageSuccessDivBox']"),
             EDIT_PROJECT_BUTTON = $("[data-testid='projectEditButton']"),
-            PROJECT_NAME_FIELD = $("[data-testid='addProjectNameInput']"),
             SAVE_PROJECT_BUTTON = $("[data-testid='addEditProjectAddButton']"),
             PROJECT_DESCRIPTION_FIELD = $("[data-testid='addEditProjectAnnouncement']");
 
@@ -56,27 +55,6 @@ public class AdminPage extends BasePage {
         log.info("Project is deleted");
         return true;
     }
-
-    @Step("Update project name")
-    public AdminPage updateProjectName(String projectName, String updatedProjectName) {
-        EDIT_PROJECT_BUTTON.click();
-        PROJECT_NAME_FIELD.shouldBe(visible).clear();
-        PROJECT_NAME_FIELD.setValue(updatedProjectName);
-        actions()
-                .scrollToElement(SAVE_PROJECT_BUTTON)
-                .perform();
-        SAVE_PROJECT_BUTTON.click();
-        log.info("The project name {} has been updated to {}", projectName, updatedProjectName);
-        return this;
-    }
-
-    @Step("Project name is updated")
-    public boolean isProjectNameUpdated() {
-        SUCCESS_MESSAGE.shouldHave(text("Successfully updated the project.")).shouldBe(visible);
-        log.info("Project name is updated");
-        return true;
-    }
-
 
     @Step("Update project description")
     public AdminPage updateProjectDescription(String projectName, String updatedProjectDescription) {

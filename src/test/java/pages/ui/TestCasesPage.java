@@ -14,10 +14,8 @@ public class TestCasesPage {
     private final SelenideElement
             TEST_CASES_BUTTON = $("[data-testid='navigateToCasesButton']"),
             TEST_CASES_TITLE = $("[data-testid='testCaseContentHeaderTitle']"),
-            ADD_SECTION_BUTTON = $("[data-testid='addSectionInline']"),
             ADD_TEST_CASE_BUTTON = $(By.xpath("//div[@class='button-group']/a[not (@data-testid)]")),
             TEST_CASE_TITLE = $("[data-testid='addEditCaseTitle']"),
-            SUCCESS_MESSAGE = $("[data-testid='messageSuccessDivBox']"),
             ERROR_MESSAGE = $("[class='message message-error']");
 
     @Step("Test Cases page is opened")
@@ -31,13 +29,6 @@ public class TestCasesPage {
     public TestCasesPage openProjectsTestCases() {
         TEST_CASES_BUTTON.click();
         log.info("Project's test cases is opened");
-        return this;
-    }
-
-    @Step("Click on create test section button")
-    public TestCasesPage clickOnCreateTesSectionButton() {
-        ADD_SECTION_BUTTON.click();
-        log.info("'Add section' button is clicked");
         return this;
     }
 
@@ -61,13 +52,6 @@ public class TestCasesPage {
         $(By.id("accept")).submit();
         log.info("'Save test case' button is clicked");
         return this;
-    }
-
-    @Step("Check visibility of created test case")
-    public boolean isTestCaseCreated() {
-        SUCCESS_MESSAGE.shouldHave(text("Successfully added the new test case. "));
-        log.info("Test case is created");
-        return true;
     }
 
     @Step("Check invisibility of test case")

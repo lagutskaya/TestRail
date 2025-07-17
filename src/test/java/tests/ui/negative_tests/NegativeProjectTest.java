@@ -9,10 +9,10 @@ public class NegativeProjectTest extends BaseTest {
 
     String emptyProjectName = "",
             emptyProjectAnnouncement = "",
-            projectName = "QA yej",
+            projectName = "zz",
             emptyTestCaseTitle = "";
 
-    @Test(testName = "Create project without values", priority = 1, alwaysRun = true)
+    @Test(testName = "Create project without values", priority = 5, alwaysRun = true)
     public void checkCreateNewProjectWithoutValues() {
         loginPage.openPage()
                 .isPageOpened()
@@ -26,7 +26,7 @@ public class NegativeProjectTest extends BaseTest {
                 "Project is created");
     }
 
-    @Test(testName = "Create test case without values", priority = 2, alwaysRun = true)
+    @Test(testName = "Create test case without values", priority = 6, alwaysRun = true)
     public void checkCreateTestCaseWithoutValues() {
         dashboardPage.openDashboardPage()
                 .isPageOpened()

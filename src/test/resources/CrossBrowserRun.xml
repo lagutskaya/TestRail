@@ -6,15 +6,15 @@
         <listener class-name="utils.AnnotationTransformer"/>
     </listeners>
     <test name="Chrome">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.ui.positive_tests.PositiveProjectTest"/>
-            <parameter name="browser" value="chrome"/>
         </classes>
-    </test> <!-- Test -->
+    </test>
     <test name="FireFox">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.ui.negative_tests.NegativeProjectTest"/>
-            <parameter name="browser" value="firefox"/>
         </classes>
-    </test> <!-- Test -->
+    </test>
 </suite>

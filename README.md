@@ -19,31 +19,31 @@ Key features:
 
 ## 🛠️ Technologies Used
 
-| Category           | Technologies                                           |
-|--------------------|-------------------------------------------------------|
-| **Language**       | Java 17                                               |
+| Category           | Technologies                                          |
+|--------------------|------------------------------------------------------|
+| **Language**       | Java 17                                              |
 | **Patterns**       | Page object pattern, chain of invocation, loadable page |
-| **Test Frameworks**| TestNG                                                |
-| **Libraries**      | Selenide, RestAssured, Lombok, AssertJ                |
-| **Build Tool**     | Maven                                                 |
-| **Logging**        | Log4j                                                 |
-| **Reporting**      | Allure Report                                         |
-| **CI/CD**          | Jenkins, GitHub Actions                               |
+| **Test Frameworks**| TestNG                                               |
+| **Libraries**      | Selenide, RestAssured, Lombok, AssertJ               |
+| **Build Tool**     | Maven                                                |
+| **Logging**        | Log4j                                                |
+| **Reporting**      | Allure Report                                        |
+| **CI/CD**          | GitHub Actions                               |
 
 ## 🚀 Checklist
 
-### UI
+### Positive tests
 
+- [ ] Login
 - [ ] Create project
-- [ ] Create test suite
-- [ ] Add test cases to suite (2 items)
+- [ ] Update project's info
 - [ ] Delete project
+- [ ] Logout
 
-### API
+### Negative tests
 
-- [ ] 1
-- [ ] 2
-- [ ] 3
+- [ ] Create project with empty values
+- [ ] Update project's info with empty values
 
 ## ✅ Completion Status
 

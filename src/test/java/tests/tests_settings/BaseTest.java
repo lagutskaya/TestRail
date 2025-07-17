@@ -6,6 +6,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import pages.ui.*;
 
@@ -16,15 +17,18 @@ public class BaseTest {
     protected AddProjectPage addProjectPage;
     protected ProjectsPage projectsPage;
     protected DashboardPage dashboardPage;
-    protected ProjectPage projectPage;
     protected TestCasesPage testCasesPage;
-    protected TestSectionPage testSectionPage;
     protected AdminPage adminPage;
     protected HeaderPage headerPage;
 
     @Parameters({"browser"})
-    @BeforeMethod(alwaysRun = true, description = "Открытие браузера")
-    public void setup() {
+    @BeforeMethod(alwaysRun = true, description = "Open browser")
+    public void setup(@Optional("chrome") String browser) {
+        if (browser.equalsIgnoreCase("chrome")) {
+            Configuration.browser = "chrome";
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            Configuration.browser = "firefox";
+        }
         Configuration.timeout = 10000;
         Configuration.clickViaJs = true;
 
@@ -36,14 +40,12 @@ public class BaseTest {
         addProjectPage = new AddProjectPage();
         projectsPage = new ProjectsPage();
         dashboardPage = new DashboardPage();
-        projectPage = new ProjectPage();
         testCasesPage = new TestCasesPage();
-        testSectionPage = new TestSectionPage();
         adminPage = new AdminPage();
         headerPage = new HeaderPage();
     }
 
-    @AfterMethod(alwaysRun = true, description = "Закрытие браузера")
+    @AfterMethod(alwaysRun = true, description = "Close browser")
     public void tearDown() {
         if (driver != null) {
             driver.quit();
