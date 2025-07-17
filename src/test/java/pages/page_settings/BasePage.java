@@ -1,4 +1,4 @@
-package pages.PageSettings;
+package pages.page_settings;
 
 
 import utils.PropertyReader;

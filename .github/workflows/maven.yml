@@ -5,7 +5,7 @@ name: TestRail CI
 
 on:
   push:
-    branches: [ "master"]
+    branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
 
@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      USER: ${{secrets.user}}
-      PASS: ${{secrets.password}}
-      URL: ${{secrets.base_url}}
+      USER: ${{secrets.USER}}
+      PASS: ${{secrets.PASSWORD}}
+      BASE_URL: ${{secrets.BASE_URL}}
 
     steps:
       - name: Checkout
@@ -28,13 +28,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Set up Chrome
-        uses: abhi1693/setup-browser@v0.3.4
+      - name: Set up Firefox
+        uses: browser-actions/setup-firefox@v1
         with:
-          browser: chrome
+          browser: firefox
           version: latest
       - name: Run tests
-        run: mvn clean test -Duser=$USER -Dpassword=$PASS -Dbase_url=$URL
+        run: mvn clean test -Duser=$USER -Dpassword=$PASS -DbaseURL=$BASE_URL
+      - name: Run cross-browser tests
+        run: mvn clean test -Duser=$USER -Dpassword=$PASS -DbaseURL=$BASE_URL -DsuiteXmlFile='src/test/resources/CrossBrowserRun.xml'
 
       - name: Get Allure history
         uses: actions/checkout@v2

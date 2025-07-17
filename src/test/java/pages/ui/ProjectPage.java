@@ -1,9 +1,9 @@
-package pages.UI;
+package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import pages.PageSettings.BasePage;
+import pages.page_settings.BasePage;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -21,7 +21,7 @@ public class ProjectPage extends BasePage {
     @Step("Open project page")
     public ProjectPage isPageOpened() {
         PROJECT_TITLE.shouldBe(visible);
-        log.info("Project page is opened");
+        log.info("Project page is open");
         return this;
     }
 
@@ -29,7 +29,7 @@ public class ProjectPage extends BasePage {
     public ProjectPage openCreatedProject(String projectName) {
         String projectNameXPath = String.format(OPEN_PROJECT_PATTERN, projectName);
         $x(projectNameXPath).click();
-        log.info("Project {} is opened", projectName);
+        log.info("Project {} is open", projectName);
         return this;
     }
 
