@@ -1,18 +1,18 @@
 package tests.tests_settings;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.annotations.*;
 import pages.ui.*;
 
 public class BaseTest {
-
-    protected WebDriver driver;
     protected LoginPage loginPage;
     protected AddProjectPage addProjectPage;
     protected ProjectsPage projectsPage;
@@ -21,23 +21,36 @@ public class BaseTest {
     protected AdminPage adminPage;
     protected HeaderPage headerPage;
 
+    private static final ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+
     @Parameters({"browser"})
-    @BeforeMethod(alwaysRun = true, description = "Open browser")
+    @BeforeClass(alwaysRun = true, description = "Open browser")
     public void setup(@Optional("chrome") String browser) {
-        Configuration.headless = true;
-        Configuration.browserSize = "1366x768";
-        Configuration.timeout = 10000;
+        Configuration.timeout = 20000;
         Configuration.clickViaJs = true;
+        Configuration.browserSize = "1920x1080";
+
+        WebDriver driver;
 
         if (browser.equalsIgnoreCase("chrome")) {
-            Configuration.browser = "chrome";
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--start-maximized", "--incognito", "--headless");
+            driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("firefox")) {
-            Configuration.browser = "firefox";
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--start-maximized", "--private", "--headless");
+            driver = new FirefoxDriver(options);
+        } else {
+            throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
+
+        threadLocalDriver.set(driver);
+        WebDriverRunner.setWebDriver(driver);
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
-                .savePageSource(true));
+                .savePageSource(false)
+        );
 
         loginPage = new LoginPage();
         addProjectPage = new AddProjectPage();
@@ -48,10 +61,12 @@ public class BaseTest {
         headerPage = new HeaderPage();
     }
 
-    @AfterMethod(alwaysRun = true, description = "Close browser")
+    @AfterClass(alwaysRun = true, description = "Close browser")
     public void tearDown() {
+        WebDriver driver = threadLocalDriver.get();
         if (driver != null) {
             driver.quit();
+            threadLocalDriver.remove();
         }
     }
 }
