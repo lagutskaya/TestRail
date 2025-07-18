@@ -24,15 +24,16 @@ public class BaseTest {
     @Parameters({"browser"})
     @BeforeMethod(alwaysRun = true, description = "Open browser")
     public void setup(@Optional("chrome") String browser) {
-        if (browser.equalsIgnoreCase("chrome")) {
-            Configuration.browser = "chrome";
-            Configuration.browserSize = "1366x768";
-        } else if (browser.equalsIgnoreCase("firefox")) {
-            Configuration.browser = "firefox";
-            Configuration.browserSize = "1366x768";
-        }
+        Configuration.headless = true;
+        Configuration.browserSize = "1366x768";
         Configuration.timeout = 10000;
         Configuration.clickViaJs = true;
+
+        if (browser.equalsIgnoreCase("chrome")) {
+            Configuration.browser = "chrome";
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            Configuration.browser = "firefox";
+        }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
