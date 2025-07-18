@@ -1,0 +1,2743 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://cdn.pendo.io https://data.pendo.io https://app.pendo.io https://pendo-static-5699730914541568.storage.googleapis.com https://cdn.embedly.com ; style-src 'self' 'unsafe-inline' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://pendo-static-5699730914541568.storage.googleapis.com ; style-src-elem 'self' 'unsafe-inline' https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io https://pendo-static-5699730914541568.storage.googleapis.com ; style-src-attr 'self' 'unsafe-inline'  ; font-src 'self' https://fonts.gstatic.com https://static.testrail-staging.com https://static.testrail.com https://static.testrail.io ; connect-src 'self' https://app.pendo.io https://data.pendo.io https://pendo-static-5699730914541568.storage.googleapis.com https://jira-oauth-broker.p.testrail.io/ ; media-src *  ; object-src 'none'  ; worker-src 'none'  ; base-uri 'self'  ; frame-src 'self' https://app.pendo.io https://*.testrail-staging.com https://*.testrail.com https://*.testrail.io http://*.eu-central-1.compute.amazonaws.com https://*.testrail.net ; child-src  https://app.pendo.io ;">
+	<title>All Projects - TestRail</title>
+		<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/jquery.ui.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/fancybox.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/chosen.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/dropzone.css" media="all">
+						<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/app-modern-combined.css" media="all">
+				<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/font.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/drilldown.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/brand/style.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/brand/brand-modern.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/assembla.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/banner-enterprise-modern.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/application.autocomplete.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/input-autocomplete.css" media="all">
+    <link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/application.input_symbols_counter.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/jquery.data-tables.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/fixed-columns.data-tables.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/application.datasets.css" media="all">
+    	<link type="text/css" rel="stylesheet" href="https://static.testrail.io/9.3.2.1002/css/autocomplete.css" media="all">
+	
+	<link rel="shortcut icon" href="https://static.testrail.io/9.3.2.1002/images/favicon.ico">
+	<script async="" src="https://cdn.pendo.io/agent/static/1c20428c-1995-4c00-6e1c-daff12af9c00/pendo.js"></script><script type="text/javascript" src="https://static.testrail.io/9.3.2.1002/js/bundle/common-deps-header.js"></script>
+			<script type="text/javascript" src="https://static.testrail.io/9.3.2.1002/js/fusioncharts.theme.fusion.js"></script><style type="text/css">@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ft calendar customization */
+.fc-cal-date-normal-fusion {
+  color: #5F5F5F;
+  font-family: 'Source Sans Pro';
+  font-size: 11px;
+}
+
+.fc-cal-date-selected-fusion {
+  color: #FEFEFE;
+  font-family: 'Source Sans Pro SemiBold';
+  font-size: 11px;
+}</style>
+			<script type="text/javascript">
+			var _0x172b=['915521FAOgwP','1WUUTor','85768HrInlH','1VBoajH','701113SlGqlh','596675VFZSmj','430136IMhboy','iyE4qlbA7A3C4A2F1D1I1B1A2A3B1B3fqyH2B7C-16xvhyA2E1lduC7E2B4E2F2G2C1B10B2D1E6C1E1E3E1G2c1D-16yC2A3E2yD1J2B3lozD1B1G4da1wB9B6C6dG-10A-8D3J2A9B1A8C7E1E5A2A1A1sB-22uE2D6G1F1H-8H-7lB8A5C7epG4d1I3B8lnE-13F4E2D3F1H4A10D9C1B5E6B1F4E3E1g==','9197lCfGYC','713897AESQnW','1QhbbSq','license','33GAfgRX'];var _0x3f57b9=_0x10c9;function _0x10c9(_0x3cfbbf,_0x10e5b7){_0x3cfbbf=_0x3cfbbf-0x73;var _0x172b34=_0x172b[_0x3cfbbf];return _0x172b34;}(function(_0x22f311,_0x1ab4f2){var _0x50a77f=_0x10c9;while(!![]){try{var _0x461480=parseInt(_0x50a77f(0x7b))+-parseInt(_0x50a77f(0x75))*-parseInt(_0x50a77f(0x7e))+parseInt(_0x50a77f(0x7c))+parseInt(_0x50a77f(0x78))+parseInt(_0x50a77f(0x7f))*parseInt(_0x50a77f(0x79))+parseInt(_0x50a77f(0x7a))*-parseInt(_0x50a77f(0x77))+-parseInt(_0x50a77f(0x76))*parseInt(_0x50a77f(0x73));if(_0x461480===_0x1ab4f2)break;else _0x22f311['push'](_0x22f311['shift']());}catch(_0x19bcfb){_0x22f311['push'](_0x22f311['shift']());}}}(_0x172b,0x7d53f),FusionCharts['options'][_0x3f57b9(0x74)]({'key':_0x3f57b9(0x7d),'creditLabel':![]}));		</script>
+	<style type="text/css">@font-face {
+  font-family: "Fira Sans Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Fira Sans Light"), local("FiraSans-Light"),
+    url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnPKreRhf6Xl7Glw.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fira Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"),
+    url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ft calendar customiztion */
+.fc-cal-day-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgb(204, 204, 204);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-normal-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgb(204, 204, 204);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-normal-candy:hover {
+  background-color: rgb(110, 110, 110);
+  color: rgb(255, 255, 255);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-date-disabled-candy {
+  background-color: rgb(52, 52, 52);
+  color: rgba(153, 156, 165, 0.75);
+  font-family: "Fira Sans Light";
+  border: none;
+}
+
+.fc-cal-month-header-candy {
+  background-color: rgb(54, 134, 156);
+  font-family: "Fira Sans Light";
+}
+
+.fc-cal-weekend-candy {
+  background-color: rgb(53, 85, 93);
+}
+
+.fc-cal-container-candy {
+  border: 0.5px solid rgb(75, 75, 75);
+}
+
+.fc-cal-nav-next-candy,
+.fc-cal-nav-prev-candy {
+  font-family: "Fira Sans Light";
+  font-size: 12px;
+}
+
+.fc-cal-date-selected-candy {
+  background-color: rgb(54, 134, 156);
+  color: rgb(255, 255, 255);
+  font-family: "Fira Sans Regular";
+}</style><style type="text/css">@font-face {
+  font-family: "Titillium Web Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"),
+    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Titillium Web SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Titillium Web SemiBold"), local("TitilliumWeb-SemiBold"),
+    url(https://fonts.gstatic.com/s/titilliumweb/v7/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzY5abuWI.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ft calendar customiztion */
+.fc-cal-day-umber {
+  background-color: #fff1e5;
+  color: #33302e;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-normal-umber {
+  background-color: #fff1e5;
+  color: #33302e;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-normal-umber:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-date-disabled-umber {
+  background-color: #fff1e5;
+  color: rgba(51, 48, 46, 0.5);
+  font-family: "Titillium Web Regular";
+  border: none;
+}
+
+.fc-cal-month-header-umber {
+  background-color: #000000;
+  font-family: "Titillium Web Regular";
+}
+
+.fc-cal-weekend-umber {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.fc-cal-container-umber {
+  border: none;
+}
+
+.fc-cal-nav-next-umber,
+.fc-cal-nav-prev-umber {
+  font-family: "Titillium Web Regular";
+  font-size: 12px;
+}
+
+.fc-cal-date-selected-umber {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+}
+
+.fc-cal-date-selected-umber:hover {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Titillium Web Regular";
+}
+</style><link type="text/css" rel="stylesheet" href="https://pendo-static-5699730914541568.storage.googleapis.com/guide-content/62SavrcL2RERtq9uWU8oRe8bE4E@hnixR8-p_2H5A6MW6X1ymGBKyug/n-mIlyTLgl73XhJ6TYJofyPSRvQ/Hsuv4BnCG1OH221Ch75h8cs5aMA.guide.css?sha256=lqqfKQIMdPAgeMgtFjCMPskUacFihyhJVTOc11oV5wI"><link type="text/css" rel="stylesheet" href="https://pendo-static-5699730914541568.storage.googleapis.com/guide-content/4E3z5uWyZrR33ZoiWCGxY6IGV7E@hnixR8-p_2H5A6MW6X1ymGBKyug/d8MzsTl5h0UcUciua5iRHPkFFt4/4Pz_Bx1-oEFVfH59WDN1wHnCPP0.guide.css?sha256=aftxFG-Wvj4d3V_1swa1OpM_VzLTR_u3UPnig9cHs8U"><style type="text/css" scoped="scoped" style="white-space: pre-wrap;" class=" pendo-style-_rq7Gg4MTui1kW5nS3t6ufqWmF4"></style><style type="text/css" scoped="scoped" style="white-space: pre-wrap;" class=" pendo-style-hnixR8-p_2H5A6MW6X1ymGBKyug"></style><link type="text/css" rel="stylesheet" href="https://pendo-static-5699730914541568.storage.googleapis.com/guide-content/2k3V8Sh2WxFxIla4LspFW487SWI/WPH3dHx43PFDTwPrOiZn8MOLg74/6QwzP-K2ddaOSy7FuL53j56czo4.guide.css?sha256=Q_-y8nC6ZIq5mG40pmnhwr3OMvc9ohCbqp0joY0_rao"><style type="text/css" scoped="scoped" style="white-space: pre-wrap;" class=" pendo-style-5WE4zNKAttGY5L9rtyD7xFc0pvQ">#pendo-button-9f0a8a47:hover{background:rgba(255, 255, 255, 0)!important;border:1px solid #2A2C35!important;color:#2A2C35!important;font-weight:400!important;}#pendo-button-83b58ae7:hover{background:rgba(26, 28, 37, 1)!important;border:0px solid #1A1C25!important;color:#FFFFFF!important;font-weight:400!important;}#pendo-close-guide-303e7d26:hover{color:#999999!important;}#pendo-close-guide-303e7d26:focus{}div:focus{}</style><style id="pendo-resource-center-bubble-animation">@keyframes pulse { 0% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.6) } } .pendo-resource-center-badge-notification-bubble::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgb(3, 148, 116); border-radius: 100%; z-index: -1; animation: pulse 2s infinite; will-change: transform; }</style></head>
+				
+
+<body data-currentdb="1" style="min-width: 966px; overflow: auto;" class="modern">
+
+
+<script type="text/javascript">
+	$(document).ready(
+		function() {
+			$('#body').css('display', 'table');
+		}
+	);
+</script>
+
+	
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				$.datepicker.setDefaults(
+					{
+						dateFormat: 'm/d/yy',
+						dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+						dayNamesShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+						dayNamesMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+						monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+						monthNamesShort: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+						firstDay: 0
+                    }
+				);
+			});
+		</script>
+
+	<div id="top" class="" style="left: 0px;" aria-hidden="true">
+    <div id="top-logo"> 
+        <a class="link-noline text-wrap-ellipsis link-tooltip" tabindex="1" tooltip-text="Back to dashboard" tooltip-position="custom" tooltip-position-top="-32" tooltip-position-left="-24" data-testid="bannerLink" href="index.php?/dashboard"><img src="https://static.testrail.io/9.3.2.1002/images/layout/TestRail_Logo_Main.svg"></a>
+	</div>
+    	<div class="top-panel dropdown-relative">
+		
+						<div>
+		<div class="top-search" title="Press Ctrl+Shift+F to open search dialog">
+			<input class="top-search-control background hidden" id="background_search_query" tabindex="-1" autocomplete="off">
+			<input class="top-search-control" type="text" placeholder="Search" maxlength="250" name="query" id="search_query" autocomplete="off" onclick="App.Search.showDialog(); return false;">
+			<span class="search-close" tabindex="0" id="clear_search_query" onclick="App.Search.clearSearchInput(); return false;"></span>
+		</div>
+		<div class="top-search-dialog hidden" id="top_search_dialog">
+			<div class="main-column">
+				<div class="dialog-categories">
+					<div class="search-dialog-header">Quick jump to</div>
+					<div class="search-categories">
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=1">Projects</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=2">Test Cases</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=3">Test Runs</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=4">Milestones</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=5">Test Suites</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=6">Reports</a>
+												<a class="dialog-category" href="index.php?/new_search/results&amp;category[]=8">Cross-Project Reports</a>
+											</div>
+				</div>
+
+				<div id="zeroState">
+					<div class="search-dialog-header">
+						Recent search results					</div>
+					<div id="recentSearchResultsContent">
+					</div>
+
+					<div class="search-dialog-header">
+						Recently viewed					</div>
+					<div class="recently-viewed">
+											</div>
+				</div>
+				<div id="newSearchResultsContent"></div>
+			</div>
+
+		<div class="filters-column">
+			<div id="filterNewSearchContent"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	App.Search.projectID = null;
+
+	//search bar keyboard behaviour
+	$('#search_query').on('keydown', function(e) {
+		if (e.key === "Tab" || e.keyCode === 9) {
+			if($('#top_search_dialog').is(':visible') && !e.shiftKey) {
+				$('.search-categories').find('.dialog-category').first().focus();
+			}
+			else {
+				if(e.shiftKey) {
+					if ($('.dynamic_add').length) {
+						$('.dynamic_add').focus();
+					}
+					else {
+						$('.link-noline.text-wrap-ellipsis.link-tooltip').focus();
+					}
+					if($('#top_search_dialog').is(':visible')) {
+						App.Search.hideDialog();
+					}
+				}
+				else {
+					if(!$('#top_search_dialog').is(':visible')) {
+						$('#inProgressLink').focus();
+					}
+				}
+
+			}
+		}
+		else {
+			if(!$('#top_search_dialog').is(':visible') && !e.shiftKey) {
+				App.Search.showDialog();
+			}
+		}
+	});
+});
+</script>
+		<div class="top-panel-inner">
+		<ul class="top-menu pull-right">
+			<li class="top-menu-item dropdown-relative">
+			<a class="dropdownLink" data-testid="workingOnButton" id="inProgressLink" href="javascript:void(0)" onclick="this.blur(); App.Tests.showInProgress(); return false;">Working On</a>
+			</li>
+			<li class="top-menu-item dropdown-relative">
+			<a data-testid="helpDropdown" class="dropdownLink dropLink" id="navigation-menu" href="#helpDropdown">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -4px;"><g clip-path="url(#clip0_3045_7842)"><path d="M9.99984 1.66675C5.39984 1.66675 1.6665 5.40008 1.6665 10.0001C1.6665 14.6001 5.39984 18.3334 9.99984 18.3334C14.5998 18.3334 18.3332 14.6001 18.3332 10.0001C18.3332 5.40008 14.5998 1.66675 9.99984 1.66675ZM9.99984 16.6667C6.32484 16.6667 3.33317 13.6751 3.33317 10.0001C3.33317 6.32508 6.32484 3.33341 9.99984 3.33341C13.6748 3.33341 16.6665 6.32508 16.6665 10.0001C16.6665 13.6751 13.6748 16.6667 9.99984 16.6667ZM9.1665 13.3334H10.8332V15.0001H9.1665V13.3334ZM10.5082 5.03341C8.7915 4.78341 7.27484 5.84175 6.8165 7.35841C6.6665 7.84175 7.03317 8.33341 7.5415 8.33341H7.70817C8.04984 8.33341 8.32484 8.09175 8.4415 7.77508C8.70817 7.03341 9.49984 6.52508 10.3582 6.70841C11.1498 6.87508 11.7332 7.65008 11.6665 8.45841C11.5832 9.57508 10.3165 9.81675 9.62484 10.8584C9.62484 10.8667 9.6165 10.8667 9.6165 10.8751C9.60817 10.8917 9.59984 10.9001 9.5915 10.9167C9.5165 11.0417 9.4415 11.1834 9.38317 11.3334C9.37484 11.3584 9.35817 11.3751 9.34984 11.4001C9.3415 11.4167 9.3415 11.4334 9.33317 11.4584C9.23317 11.7417 9.1665 12.0834 9.1665 12.5001H10.8332C10.8332 12.1501 10.9248 11.8584 11.0665 11.6084C11.0832 11.5834 11.0915 11.5584 11.1082 11.5334C11.1748 11.4167 11.2582 11.3084 11.3415 11.2084C11.3498 11.2001 11.3582 11.1834 11.3665 11.1751C11.4498 11.0751 11.5415 10.9834 11.6415 10.8917C12.4415 10.1334 13.5248 9.51675 13.2998 7.92508C13.0998 6.47508 11.9582 5.25008 10.5082 5.03341Z" fill="white"></path></g><defs><clipPath id="clip0_3045_7842"><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+				<svg class="down__arrow-svg" style="vertical-align: -6px;margin: -1px -4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.774 10.175-2.778 2.357-2.777-2.357a.806.806 0 0 0-1.01 0 .543.543 0 0 0 0 .856l3.286 2.788c.28.237.73.237 1.01 0l3.286-2.788a.543.543 0 0 0 0-.856c-.28-.231-.738-.237-1.017 0z" fill="#fff"></path></svg>
+			</a>
+			<div id="helpDropdown" class="dropdown dropdown-menu help-menu" rel="helpMenu" style="width: 175px; z-index: 110; display: none;">
+				<ul>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="Get Help" tooltip-position="left" data-testid="userGuideButton" target="_blank" href="https://support.testrail.com/hc/en-us/articles/7076810203028-Introduction-to-TestRail">
+							User Guide						</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="User Guide" tooltip-position="left" data-testid="helpMenuGetHelpButton" target="_blank" href="https://support.testrail.com/hc/en-us/requests/new">
+							Get Help						</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="Academy" tooltip-position="left" data-testid="helpMenuTestrailAcademyButton" target="_blank" href="https://academy.testrail.com/">
+							Academy						</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="Keyboard Shortcuts" tooltip-position="left" data-testid="helpMenuKeysButton" target="_blank" href="https://support.testrail.com/hc/en-us/articles/7076852613652-Keyboard-shortcuts-hotkeys">
+							Keyboard Shortcuts						</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="Release Notes" tooltip-position="left" data-testid="testRailReleaseNotesButton" target="_blank" href="https://support.testrail.com/hc/en-us/categories/10423097338132-Release-Notes">
+							Release Notes						</a>
+					</li>
+										<li>
+						<a class="dropdown-menu-link " tooltip-text="About TestRail" tooltip-position="left" data-testid="aboutTestrailButton" href="javascript:void(0)" onclick="this.blur(); App.Help.showAbout(); return false;">
+							About TestRail						</a>
+					</li>
+					<li class="dropdown-menu-separator"></li>
+					<li class="user_social">
+						<a href="https://secure.gurock.com/customers/testrail/newsletter?email=polinasone55@gmail.com" target="_blank" tooltip-text="Subscribe to Gurock's newsletter to receive TestRail updates in your inbox." user-social-tooltip-width="250" class="top-social-link link-tooltip email_social" data-testid="newsIconButton">
+							<div class="icon-header-mail"></div>
+						</a>
+						<a href="https://www.linkedin.com/company/testrail" tooltip-text="Follow TestRail on LinkedIn for relevant TestRail updates." user-social-tooltip-width="250" target="_blank" class="top-social-link link-tooltip linkedin_social" data-testid="linkedinIconButton">
+							<div class="icon-header-linkedin"></div>
+						</a>
+						<a href="https://www.youtube.com/@testrail" tooltip-text="Subscribe TestRail on Youtube for relevant TestRail updates." user-social-tooltip-width="200" target="_blank" class="top-social-link link-tooltip youtube_social" data-testid="youtubeIconButton">
+							<div class="icon-header-youtube"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</li>
+						<li class="top-menu-item dropdown-relative">
+			<a class="dropdownLink dropLink" id="navigation-user" data-testid="userDropdown" href="#userDropdown" title="Test User">
+				<span class="navigation-username ">Test User</span>
+					<svg class="down__arrow-svg" style="vertical-align: -6px;margin: -1px -4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m14.774 10.175-2.778 2.357-2.777-2.357a.806.806 0 0 0-1.01 0 .543.543 0 0 0 0 .856l3.286 2.788c.28.237.73.237 1.01 0l3.286-2.788a.543.543 0 0 0 0-.856c-.28-.231-.738-.237-1.017 0z" fill="#fff"></path></svg>
+			</a>
+			<div id="userDropdown" data-testid="userDropdown" class="dropdown dropdown-menu user-menu" rel="userMenu" style="width: 125px; display: none;">
+				<ul>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="My Settings" tooltip-position="left" data-testid="pageSettingsButton" id="navigation-user-settings" href="index.php?/mysettings">
+						My Settings</a>
+					</li>
+					<li>
+						<a class="dropdown-menu-link " tooltip-text="Log Out" tooltip-position="left" data-testid="logoutButton" id="navigation-user-logout" href="index.php?/auth/logout">Log Out</a>
+					</li>
+				</ul>
+			</div>
+			</li>
+			<li class="top-menu-item"><a class="" id="navigation-admin" data-testid="navigationUser" href="index.php?/admin/overview/" title="Admin">
+				<svg style="vertical-align: -7px; margin-right: 4px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18.384 12.784C18.4169 12.528 18.4416 12.272 18.4416 12C18.4416 11.728 18.4169 11.472 18.384 11.216L20.1194 9.896C20.2757 9.776 20.3168 9.56 20.2181 9.384L18.5732 6.616C18.4992 6.488 18.3594 6.416 18.2113 6.416C18.162 6.416 18.1126 6.424 18.0715 6.44L16.0236 7.24C15.596 6.92 15.1354 6.656 14.6337 6.456L14.3212 4.336C14.2965 4.144 14.1238 4 13.9182 4H10.6284C10.4228 4 10.2501 4.144 10.2254 4.336L9.91289 6.456C9.4112 6.656 8.95063 6.928 8.52296 7.24L6.47508 6.44C6.42573 6.424 6.37639 6.416 6.32704 6.416C6.18723 6.416 6.04741 6.488 5.97339 6.616L4.32851 9.384C4.22159 9.56 4.27093 9.776 4.4272 9.896L6.16255 11.216C6.12966 11.472 6.10498 11.736 6.10498 12C6.10498 12.264 6.12966 12.528 6.16255 12.784L4.4272 14.104C4.27093 14.224 4.22981 14.44 4.32851 14.616L5.97339 17.384C6.04741 17.512 6.18723 17.584 6.33527 17.584C6.38461 17.584 6.43396 17.576 6.47508 17.56L8.52296 16.76C8.95063 17.08 9.4112 17.344 9.91289 17.544L10.2254 19.664C10.2501 19.856 10.4228 20 10.6284 20H13.9182C14.1238 20 14.2965 19.856 14.3212 19.664L14.6337 17.544C15.1354 17.344 15.596 17.072 16.0236 16.76L18.0715 17.56C18.1209 17.576 18.1702 17.584 18.2196 17.584C18.3594 17.584 18.4992 17.512 18.5732 17.384L20.2181 14.616C20.3168 14.44 20.2757 14.224 20.1194 14.104L18.384 12.784ZM16.7556 11.416C16.7885 11.664 16.7967 11.832 16.7967 12C16.7967 12.168 16.7803 12.344 16.7556 12.584L16.6405 13.488L17.3724 14.048L18.2607 14.72L17.685 15.688L16.6405 15.28L15.7851 14.944L15.0449 15.488C14.6913 15.744 14.3541 15.936 14.0169 16.072L13.1451 16.416L13.0135 17.32L12.849 18.4H11.6976L11.5413 17.32L11.4097 16.416L10.5379 16.072C10.1843 15.928 9.85532 15.744 9.52634 15.504L8.77792 14.944L7.90613 15.288L6.86163 15.696L6.28592 14.728L7.17416 14.056L7.90613 13.496L7.79099 12.592C7.76632 12.344 7.74987 12.16 7.74987 12C7.74987 11.84 7.76632 11.656 7.79099 11.416L7.90613 10.512L7.17416 9.952L6.28592 9.28L6.86163 8.312L7.90613 8.72L8.76147 9.056L9.50167 8.512C9.85532 8.256 10.1925 8.064 10.5297 7.928L11.4015 7.584L11.5331 6.68L11.6976 5.6H12.8408L12.9971 6.68L13.1286 7.584L14.0004 7.928C14.3541 8.072 14.6831 8.256 15.012 8.496L15.7605 9.056L16.6322 8.712L17.6767 8.304L18.2525 9.272L17.3724 9.952L16.6405 10.512L16.7556 11.416ZM12.2733 8.8C10.4557 8.8 8.98353 10.232 8.98353 12C8.98353 13.768 10.4557 15.2 12.2733 15.2C14.0909 15.2 15.5631 13.768 15.5631 12C15.5631 10.232 14.0909 8.8 12.2733 8.8ZM12.2733 13.6C11.3686 13.6 10.6284 12.88 10.6284 12C10.6284 11.12 11.3686 10.4 12.2733 10.4C13.178 10.4 13.9182 11.12 13.9182 12C13.9182 12.88 13.178 13.6 12.2733 13.6Z" fill="white"></path>
+				</svg><span>Admin</span>
+				</a>
+			</li>
+					</ul>
+			</div>
+</div>
+			<div class="top-section top-section-info project-text-wrap-ellipsis link-tooltip ">
+		TestRail QA	</div>
+</div>
+
+<form id="newsletterForm" target="_blank" action="https://secure.gurock.com/customers/testrail/newsletter?email=" method="post" aria-hidden="true">
+	<input name="cm-ahdml-ahdml" id="newsletter" type="hidden">
+</form>
+
+
+<!-- suites/dnd_dropdown -->
+<div id="sectionsDndDropdown" class="dropdown dropdown-menu" style="width: 150px; display: none;" aria-hidden="true">
+	<ul>
+		<li id="sectionsDndMove"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropMove(); return false;">Move here			<span class="dropdown-menu-link-secondary">(ctrl/cmd)</span></a></li>
+		<li id="sectionsDndMoveDisabled"><a class="dropdown-menu-link dropdown-menu-link-disabled" href="javascript:void(0)">Move here</a></li>
+		<li id="sectionsDndCopy"><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropCopy(); return false;">Copy here		<span class="dropdown-menu-link-secondary">(shift)</span></a></li>
+		<li class="dropdown-menu-separator"></li>
+		<li><a class="dropdown-menu-link" href="javascript:void(0)" onclick="this.blur(); App.Sections.dropCancel(); return false;">Cancel</a></li>
+	</ul>
+</div>
+
+<div id="separator" aria-hidden="true"></div>
+<div id="body-container" class="" aria-hidden="true">
+	<div id="body" class="table " style="display: table;">
+				<div id="sidebar" data-testid="sidebar" class="column sidebar " style="width: 256px">
+			
+<div class="" id="efep-invoker-change-professional-popover" data-testid="efep-test-id-change-disabled-professional-popover">
+	<p id="efep-popover-testcase-approvals-change-professional" class="feature-popover change-disabled-professional-popover">Set up collaborative review and approval processes with the <strong>TestRail Enterprise</strong> plan. Learn how to <a href="index.php?/enterprise" id="efep-testcase-approvals-change" class="feature-popover-link">ensure cases are accurately defined here.</a></p>
+</div>
+			<div class="sidebar-content ">
+									<div id="all-projects-sidebar">
+																									<div class="dashboard-search-wrap">
+								<div class="main-sidebar-menu" data-testid="searchProjectsDropdown">
+    <span class="search_wrap project-search-wrap">
+        <input data-testid="searchProjectInput" type="text" class="search-project" id="searchProject" placeholder="Search Projects" title="Search Projects">
+        <span class="cancel_search" tabindex="0"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.6894 5.3212C18.2753 4.90709 17.6064 4.90709 17.1923 5.3212L12 10.5028L6.80774 5.31058C6.39363 4.89647 5.72469 4.89647 5.31058 5.31058C4.89647 5.72469 4.89647 6.39363 5.31058 6.80774L10.5028 12L5.31058 17.1923C4.89647 17.6064 4.89647 18.2753 5.31058 18.6894C5.72469 19.1035 6.39363 19.1035 6.80774 18.6894L12 13.4972L17.1923 18.6894C17.6064 19.1035 18.2753 19.1035 18.6894 18.6894C19.1035 18.2753 19.1035 17.6064 18.6894 17.1923L13.4972 12L18.6894 6.80774C19.0929 6.40425 19.0929 5.72469 18.6894 5.3212Z" fill="#1466b8"></path></svg></span>
+    </span>
+    <div class="search-project-menu">
+        <ul class="projects_search">
+              
+            <li>
+                <a data-testid="projectId130" class="dropdown-menu-link " href="index.php?/projects/overview/130">QA eel</a>
+            </li>
+              
+            <li>
+                <a data-testid="projectId126" class="dropdown-menu-link " href="index.php?/projects/overview/126">QA tnh</a>
+            </li>
+              
+            <li>
+                <a data-testid="projectId115" class="dropdown-menu-link " href="index.php?/projects/overview/115">QA xax</a>
+            </li>
+              
+            <li>
+                <a data-testid="projectId110" class="dropdown-menu-link " href="index.php?/projects/overview/110">zz</a>
+            </li>
+                        <li class="projects_no_result">
+                <a class="dropdown-menu-link" tabindex="-1" href="javascript:void(0);">No result found</a>
+            </li>
+        </ul>
+                        <ul class="add-project-ul">
+            <li class="project-dropdown-menu-separator"></li>
+            <li class="add__project">
+                <a class="" id="newProjectAddLink" data-testid="newProjectAdd" href="index.php?/admin/projects/add/1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0614 13.0148H13.2042V15.8719C13.2042 16.1862 12.9471 16.4434 12.6328 16.4434C12.3185 16.4434 12.0614 16.1862 12.0614 15.8719V13.0148H9.20424C8.88996 13.0148 8.63281 12.7576 8.63281 12.4434C8.63281 12.1291 8.88996 11.8719 9.20424 11.8719H12.0614V9.01479C12.0614 8.7005 12.3185 8.44336 12.6328 8.44336C12.9471 8.44336 13.2042 8.7005 13.2042 9.01479V11.8719H16.0614C16.3757 11.8719 16.6328 12.1291 16.6328 12.4434C16.6328 12.7576 16.3757 13.0148 16.0614 13.0148Z" fill="#1466B8"></path>
+                    </svg>
+                    <span class="">Add Project</span>
+                </a>
+            </li>
+        </ul>
+            </div>
+</div>
+							</div>
+																									<div id="sidebar-inner-data">
+								
+
+<script>
+    $(document).ready(function () {
+        App.Charts.init();
+        App.Charts.new_search_enabled = true;
+        App.Charts.singleProjectId = undefined;
+        App.Controls.triggerClickOnEnter('.search-choice-close');
+        $(document).on("keydown", ".ui-datepicker-prev, .ui-datepicker-next, .ui-state-default", function(event) {
+            if (event.key === "Enter" || event.keyCode === 13) {
+                $(this).click();    
+            }
+        });
+        $('#charts-refine-form').css('max-height', $(window).height() - 40);
+        $(window).on('resize', function(){
+            $('#charts-refine-form').css('max-height', $(window).height() - 40);
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"charts_search_loading",
+		""	);
+		App.Translations.add(
+		"charts_search_no_results",
+		""	);
+	});
+</script>
+<div class="sidebar-inner dashboard-sidebar-content dashboard-sidebar">
+	<strong>Dashboard</strong>
+			<p class="top dashboard-sidebar-content-inner"><strong class="text-softer">4</strong> active and <strong class="text-softer">0</strong> completed projects.</p>
+		<a id="sidebar-projects-add" data-testid="sidebarProjectsAddButton" class="sidebar-button sidebar-nav-btn" href="index.php?/admin/projects/add/1">
+			Add Project		</a>
+		<div>
+	<div class="sidebar-h1 top sidebar-common-heading">
+		To-Do		<span id="todosBusy" style="display: none;">
+			<div class="icon-progress-inline"></div>
+		</span>
+	</div>
+	<div id="todos" class="hidden" style="display: block;">	<p class="top">None</p>
+</div>
+	</div>
+	</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		App.Dashboard.loadTodos();
+	}
+);
+</script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	jQuery("#trEnterpriseBanner").css('width','auto');
+
+		App.Hotkeys.register(
+		'p',
+		function()
+		{
+			App.Page.load('admin/projects/add/1');
+		}
+	);
+    });
+</script>
+
+<!--TR Enterprise Banner Display-->
+<!--TR Enterprise Banner Display ends here-->							</div>
+											</div>
+											<div id="cross-projects-sidebar" style="display: none;">
+	<div class="sidebar-h1 top sidebar-common-heading sidebar-title">Create Cross-Project Reports</div>
+	<p></p><p style="color:#3C4D6B;"> You can create or schedule Reports to easily track metrics across all projects with filters using the following Report templates. </p><p></p>
+	<div class="sidebar-h1 top sidebar-common-heading">Test Execution</div>
+	<div>
+		<table class="grid create-report">
+			<colgroup>
+			<col>
+			<col class="action">
+			</colgroup>
+			<tbody>
+			<tr class="dark">
+				<td class="dark reports text-softer">
+					<a class="link-noline link-tooltip" href="index.php?/cross_project_reports/add_job/&amp;plugin=cross_projects_summary" id="add_cross_projects_summary_report" tooltip-html="&lt;strong&gt;“Test Execution - Projects Summary”&lt;/strong&gt; Report provides a breakdown of test execution of multiple projects side-by-side." tooltip-position="bottom">
+					Projects Summary</a>
+				</td>
+				<td class="dark reports_plus reports action-large">
+					<a tabindex="-1" href="index.php?/cross_project_reports/add_job/&amp;plugin=cross_projects_summary">
+						<div class="icon-add"></div>
+					</a>
+				</td>
+			</tr>
+			<tr class="dark">
+				<td class="dark reports text-softer ">
+					<a class="link-noline link-tooltip" href="index.php?/cross_project_reports/add_job/2&amp;plugin=cross_projects_users_workload_summary" id="add_cross_projects_user_report" tooltip-html="&lt;strong&gt;“Test Execution - User Workload”&lt;/strong&gt; Report provides a breakdown of insights into tests assignments to each user across multiple projects." tooltip-position="bottom">
+					User Workload</a>
+				</td>
+
+				<td class="dark reports_plus reports action-large">
+					<a tabindex="-1" href="index.php?/cross_project_reports/add_job/2&amp;plugin=cross_projects_users_workload_summary">
+                            <div class="icon-add"></div>
+					</a>
+				</td>
+
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>												</div>
+		</div>
+			<div id="sidebar-splitter" class="column splitter sidebar-splitter" style="left: 256px;">
+	</div>
+	<div id="spacer" class="column " style="width: 256px; height: calc(100vh - 48px);"></div>
+		<div id="content" class="column content ">
+		
+            
+        					<div id="content-header" class="content-header content-header-default">
+	<div class="content-header-inner">
+		<div class="content-header-result" style=""></div>
+											<div class="page-title-content-header">
+				<span class="content-header-icon content-header-icon-combined"><a href="javascript:void(0)" class="link-tooltip" tooltip-header="Compact View" tooltip-text="Displays the active projects as a compact list. Useful if you have many projects." onclick="this.blur(); var link = this; var i = document.createElement('input');
+			i.setAttribute('type', 'hidden');
+			i.setAttribute('name', '_token');
+			i.setAttribute('value', 'SBGEvXLT32VSFhD7gFot');
+			var f = document.createElement('form');
+			f.style.display = 'none'; 
+			f.method = 'POST';
+			f.action = 'index.php?/dashboard/index_display/&amp;display=small';
+			if(document.getElementById('sidebar-close-testplan-button')){
+				if(document.getElementById('sidebar-close-testplan-button').getElementsByTagName('form').length &lt; 1){
+					link.parentNode.appendChild(f);
+					f.appendChild(i);
+					f.submit();
+				}
+			}else if(document.getElementById('edit-close-testrun-button')){
+				if(document.getElementById('edit-close-testrun-button').getElementsByTagName('form').length &lt; 1){
+					link.parentNode.appendChild(f);
+					f.appendChild(i);
+					f.submit();
+				}
+			}
+			else{
+				link.parentNode.appendChild(f);
+				f.appendChild(i);
+				f.submit();
+			}; return false;"><div class="icon-display-small-inactive"></div></a></span><span class="content-header-icon"><a href="javascript:void(0)" class="link-tooltip" tooltip-header="Detail View" tooltip-text="Displays the active projects with many details." onclick="this.blur(); var link = this; var i = document.createElement('input');
+			i.setAttribute('type', 'hidden');
+			i.setAttribute('name', '_token');
+			i.setAttribute('value', 'SBGEvXLT32VSFhD7gFot');
+			var f = document.createElement('form');
+			f.style.display = 'none'; 
+			f.method = 'POST';
+			f.action = 'index.php?/dashboard/index_display&amp;display=large';
+			if(document.getElementById('sidebar-close-testplan-button')){
+				if(document.getElementById('sidebar-close-testplan-button').getElementsByTagName('form').length &lt; 1){
+					link.parentNode.appendChild(f);
+					f.appendChild(i);
+					f.submit();
+				}
+			}else if(document.getElementById('edit-close-testrun-button')){
+				if(document.getElementById('edit-close-testrun-button').getElementsByTagName('form').length &lt; 1){
+					link.parentNode.appendChild(f);
+					f.appendChild(i);
+					f.submit();
+				}
+			}
+			else{
+				link.parentNode.appendChild(f);
+				f.appendChild(i);
+				f.submit();
+			}; return false;"><div class="icon-display-large"></div></a></span>			</div>
+		                                    				<div class="content-header-title page_title" data-testid="testCaseContentHeaderTitle">
+																				Dashboard					</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$("#sites").prop("selectedIndex", 0);
+</script>
+																						<div id="cross_report_content_inner" data-testid="contentInnerTestId" class="content-inner goals-clear">
+																	            <p id="restoreBackup" class="top message message-hint" data-testid="backupsTabsMessageHint" style="margin-bottom: 1.5em; display:none">
+    <strong>Restore requested.</strong>
+    <a href="javascript:void(0)" onclick="this.blur(); App.Admin.cancelRestoration(); return false;" id="cancel_restoration_message_link" data-testid="backupsTabsCancelRestorationMessageLink">Cancel restoration?</a>
+</p>
+
+			<script>
+				const positionFilterBubble = () => {
+					const contentInner = $('#cross_report_content_inner');
+					const contentInnerWidth = contentInner.outerWidth();
+					const MAX_WIDTH_TO_SHOW_TWO_COLUMNS = 750;
+
+					const descriptionHeight = $('#description').height();
+					const margin = descriptionHeight > 0 ? 21 : 0;
+
+					const contentHeaderInnerHeight = $('.content-header-inner').outerHeight();
+					const contentHeaderHeight = $('#content-header').outerHeight();
+
+					const successMessageHeight = $('.message-success').outerHeight();
+					const successMessageMargin =  successMessageHeight > 0 ? 17.5 : 0;
+
+					// calculating top offset as per screen size
+					const filterTopOffset = (contentInnerWidth < MAX_WIDTH_TO_SHOW_TWO_COLUMNS ? 386 : 326) + contentHeaderInnerHeight + successMessageHeight + successMessageMargin;
+					contentInner.find('#filterTestsBubble').css('top', filterTopOffset);
+
+					const caseTopOffset = 66 + descriptionHeight + margin + contentHeaderHeight + successMessageHeight + successMessageMargin;
+					const filterCasesBubble = contentInner.find('#filterCasesBubble');
+					filterCasesBubble.css('top', caseTopOffset);
+				}
+				function adjustHeaderPosition() {
+					const $header = $('#top');
+					if ($(window).width() < 960) {
+					let scrollLeft = $(window).scrollLeft();
+					if ($header.outerWidth() - $(window).width()  >= scrollLeft) {
+						$header.css('left', -scrollLeft);
+					}
+					} else {
+					$header.css('left', '0');
+					}
+				}
+				$(window).on('scroll resize', function() {
+					adjustHeaderPosition();
+				});
+				$(window).ready(function() {
+					adjustHeaderPosition();
+				})
+				$(window).resize(function() {
+					setTimeout(positionFilterBubble, 10);
+				});
+				
+				$(document).ready(function() {
+					App.Controls.handleShiftTabDropdown('#navigation-menu', '#helpDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('#navigation-menu', '#helpDropdown');
+					App.Controls.handleLastElementTabOut('#navigation-menu', '#helpDropdown', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('#navigation-user', '#userDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('#navigation-user', '#userDropdown');
+					App.Controls.handleLastElementTabOut('#navigation-user', '#userDropdown', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('.projectOpen', '#projectsDropdown', App.Sidebar.toggleProjectsDropdown);
+					App.Controls.handleFirstElementTabIn('.projectOpen', '#projectsDropdown');
+					App.Controls.handleLastElementTabOut('.projectOpen', '#projectsDropdown', App.Sidebar.toggleProjectsDropdown);
+
+					App.Controls.handleShiftTabDropdown('.dynamic_add', '#dynamicAdd', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('.dynamic_add', '#dynamicAdd');
+					App.Controls.handleLastElementTabOut('.dynamic_add', '#dynamicAdd', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('.button-report', '#reportDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('.button-report', '#reportDropdown');
+					App.Controls.handleLastElementTabOut('.button-report', '#reportDropdown', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('.button-defect', '#defectDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('.button-defect', '#defectDropdown');
+					App.Controls.handleLastElementTabOut('.button-defect', '#defectDropdown', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('#groupByChange', '#groupDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('#groupByChange', '#groupDropdown');
+					App.Controls.handleLastElementTabOut('#groupByChange', '#groupDropdown', App.Dropdowns.closeAll);
+
+					App.Controls.handleShiftTabDropdown('#filterByChange', '#filterBubble', App.Todos.cancelFilter);
+					App.Controls.handleFirstElementTabIn('#filterByChange', '#filterBubble');
+					App.Controls.handleLastElementTabOut('#filterByChange', '#filterBubble', App.Todos.cancelFilter);
+					
+					App.Controls.handleShiftTabDropdown('.exportDropdownLink', '#exportDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('.exportDropdownLink', '#exportDropdown');
+					App.Controls.handleLastElementTabOut('.exportDropdownLink', '#exportDropdown', App.Dropdowns.closeAll);
+					
+					App.Controls.handleShiftTabDropdown('.importDropdownLink', '#importDropdown', App.Dropdowns.closeAll);
+					App.Controls.handleFirstElementTabIn('.importDropdownLink', '#importDropdown');
+					App.Controls.handleLastElementTabOut('.importDropdownLink', '#importDropdown', App.Dropdowns.closeAll);
+					
+					$('#inProgressLink').on('click', function() {
+						$(this).focus();
+					});
+					$('#inProgressLink').on('keydown', function(e) {
+						if ((e.key === "Tab" || e.keyCode === 9) && $('#inProgressDropdown').is(':visible') && !e.shiftKey) {
+							if ($('#inProgressDropdown .grid').length > 0) {
+								$('#inProgressDropdown .grid a').last().on('keydown', function(e) {
+									if ((e.key === "Tab" || e.keyCode === 9) && !e.shiftKey) {
+										$('#inProgressLink').click();
+									}
+								});
+							} else {
+								$(this).click();
+							}
+						}
+						else if ((e.key === "Tab" || e.keyCode === 9) && e.shiftKey && $('#inProgressDropdown').is(':visible')) {
+							$(this).click();
+						}
+					});
+
+					App.Controls.triggerClickOnEnter('.projectOpen');
+					App.Controls.triggerClickOnEnter('#sidebar-tree-header');
+					
+					$('.projectOpen').on('focus', function () {
+						var span = document.querySelector('.main-sidebar-header');
+						this.style.setProperty('outline', 'none', 'important');
+						span.classList.add('outline-focus');
+					});
+
+					$('.projectOpen').on('blur', function () {
+						var span = document.querySelector('.main-sidebar-header');
+						span.classList.remove('outline-focus');
+					});
+				});
+			</script>
+<div class="tabs">
+	<div class="tab-header tab-header-report-summary cross-project-reports-tab">
+		<a href="javascript:void(0)" class="tab1 current" rel="1" onclick="App.Tabs.activateDashboardTabs(this, 'all')">ALL PROJECTS</a>
+		            <a href="javascript:void(0)" class="tab2" rel="2" onclick="App.Tabs.activateDashboardTabs(this, 'cross')">CROSS-PROJECT REPORTS</a>
+			</div>
+	<div class="tab-body tab-frame">
+		<div class="tab tab1 current" style="">
+										
+										
+			<div class="dialog" id="addProjectDialog" data-testid="addExampleProjectDialog" style="width: 500px">
+	<div class="dialog-title">Add Example Project</div>
+	<form id="addProjectForm">
+		<div class="dialog-body">
+			<p class="top message message-help">Example projects are generated by TestRail and contain sample data
+such as test cases, results and milestones. They are a good way to see and use many of
+TestRail's features and are perfect for evaluation or demonstration purposes.</p>
+			<div class="message message-error validationError" data-testid="messageErrorTestid" id="addProjectErrors"></div>
+			<div class="form-group bottom">
+				<label for="addProjectName">
+					Name					<span class="form-required">*</span>
+				</label>
+				<input class="form-control form-control-full" type="text" name="addProjectName" id="addProjectName" data-testid="addExampleProjectDialogName" maxlength="250" value="" placeholder="Example Project">
+				<div class="form-description form-description-full">
+									</div>
+			</div>
+		</div>
+		<div class="button-group dialog-buttons-highlighted">
+			<button class="button button-left button-positive button-ok dialog-action-default" id="addProjectSubmit" data-testid="addExampleProjectDialogSubmit" type="submit">
+				Add Example Project			</button>
+			<a class="button button-left button-negative button-cancel dialog-action-close" tabindex="0">
+				Cancel			</a>		
+		</div>
+	</form>
+</div>
+
+			
+												
+							
+
+				<div id="actionContainer">
+				<div class="chart-top-bar">
+    <div class="chart-configuration-bar chart-configuration-bar-left">
+        <div class="chartbar-btn-background">
+            <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="up" tooltip-width="60" tooltip-text="Download">
+                <div id="clickDownload" onclick="App.Charts.downloadDropdown()" class="btn-icon img-download-before" tabindex="0">
+                </div>
+            </div>
+            <div id="downloadDropdown" class="chart-btn-dropdown-content">
+                <div class="chartbar-btn-background content-button">
+                    <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="right" tooltip-width="170" tooltip-text="Download chart as an image">
+                        <div id="download-as-png" class="btn-icon download-png" tabindex="0"></div>
+                    </div>
+                </div>
+                <div class="chartbar-btn-background content-button">
+                    <div data-html2canvas-ignore="true" class="link-tooltip" tooltip-position="right" tooltip-width="150" tooltip-text="Download chart as a CSV">
+                        <div id="download-as-csv" class="btn-icon download-csv" tabindex="0"></div>
+                    </div>
+                </div>
+                <div class="chartbar-btn-background content-button">
+                    <div data-html2canvas-ignore="true" class="link-tooltip" tooltip-position="right" tooltip-width="150" tooltip-text="Download chart as a xls">
+                        <div class="btn-icon download-xls" id="download-as-excel" tabindex="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chartbar-btn-background">
+            <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="up" tooltip-width="120" tooltip-text-success="Copied" tooltip-text="Copy to Clipboard" select_entity_fchart="">
+                <div id="copy-to-clipboard" onclick="App.Charts.copyToClipboard('#chart-line-fc')" class="btn-icon copy-clickboard-before" tabindex="0"></div>
+            </div>
+        </div>
+        <div class="chartbar-btn-background">
+            <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="up" tooltip-width="40" tooltip-text="Reset">
+                <div id="clickToReset" onclick="App.Charts.clickReset();" class="btn-icon reset-before" value="14" valueentity="activity" tabindex="0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="chart-configuration-bar chart-configuration-bar-right">
+        <div class="chartbar-btn-background-right graph-button">
+            <div class="link-tooltip" id="selectedChart" data-html2canvas-ignore="true" tooltip-position="up" tooltip-width="160 " tooltip-text="Line  ()">
+                <div id="selectedGraph" onclick="App.Charts.graphDropdown()" class="btn-icon line_chart_default" tabindex="0">
+                </div>
+            </div>
+            <div id="graphDropdown" class="chart-btn-dropdown-content graph-dropdown">
+                <div class="chartbar-btn-background content-button line-chart-area">
+                    <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="left" tooltip-width="60" tooltip-text="Line">
+                        <div id="line_chart_default" data-chart-type="msline" class="chart-change-button btn-icon line_chart_default" tabindex="0"></div>
+                    </div>
+                </div>
+                <div class="chartbar-btn-background content-button stacked-bar-chart-area">
+                    <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="left" tooltip-width="100" tooltip-text="Horizontal Bars">
+                        <div id="horizontal_bar_default" data-chart-type="bar2d" class="chart-change-button btn-icon horizontal_bar_default" tabindex="0"></div>
+                    </div>
+                    <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="left" tooltip-width="80" tooltip-text="Stacked Bars">
+                        <div id="horizontalstacked_default" data-chart-type="stackedbar2d" data-stack-enabled="true" class="chart-change-button btn-icon horizontalstacked_default" tabindex="0"></div>
+                    </div>
+                    <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="left" tooltip-width="80" tooltip-text="Grouped Bars">
+                        <div id="groupedhorizontal_default" data-chart-type="msbar2d" data-stack-enabled="true" class="chart-change-button btn-icon groupedhorizontal_default" tabindex="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="entityChartVariableTimeInRight" data-testid="entityChartVariableTimeInRight">
+            <div class="chartbar-btn-background refine-button">
+                                <div class="link-tooltip" data-html2canvas-ignore="true" tooltip-position="bottom" tooltip-width="60" tooltip-from-top="211" tooltip-text="Refine">
+                    <a id="chart-refine" href="javascript:void(0)" onclick="this.blur(); App.Charts.showRefineDialog(); return false;">Refine</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        App.Controls.triggerClickOnEnter('#clickDownload');
+        App.Controls.triggerClickOnEnter('#download-as-png');
+        App.Controls.triggerClickOnEnter('#download-as-csv');
+        App.Controls.triggerClickOnEnter('#download-as-excel');
+        App.Controls.triggerClickOnEnter('#copy-to-clipboard');
+        App.Controls.triggerClickOnEnter('#clickToReset');
+        App.Controls.triggerClickOnEnter('#selectedGraph');
+        App.Controls.triggerClickOnEnter('#line_chart_default');
+        App.Controls.triggerClickOnEnter('#horizontal_bar_default');
+        App.Controls.triggerClickOnEnter('#horizontalstacked_default');
+        App.Controls.triggerClickOnEnter('#groupedhorizontal_default');
+
+        App.Controls.handleShiftTabDropdown('#clickDownload', '#downloadDropdown', App.Charts.downloadDropdown);
+        App.Controls.handleFirstElementTabIn('#clickDownload', '#downloadDropdown');
+        App.Controls.handleLastElementTabOut('#clickDownload', '#downloadDropdown', App.Charts.downloadDropdown);
+
+        App.Controls.handleShiftTabDropdown('#selectedGraph', '#graphDropdown', App.Charts.graphDropdown);
+        App.Controls.handleFirstElementTabIn('#selectedGraph', '#graphDropdown');
+        App.Controls.handleLastElementTabOut('#selectedGraph', '#graphDropdown', App.Charts.graphDropdown);
+    });
+</script><div id="chart-line-fc" class="chart-line">
+    <div id="error-chart-render" class="errorChart" style="display:none; height:210px; width:100%">
+        <div id="renderImage">
+            <img src="https://static.testrail.io/9.3.2.1002/images/theme-modern/charting/no_data_error.svg">
+        </div>
+        <div class="error-chart-para-outer">An unexpected error occurred</div>
+
+        <div class="error-chart-para-inner">Please try your chart configuration again.</div>
+
+    </div>
+
+        <div class="data-point-container" style="display: none">
+        <div class="data-point">
+            Fetching &nbsp; <strong id="count">0</strong> &nbsp; datapoints        </div>
+    </div>
+    <div id="selectNoDataTimeFrame" style="display: block;">
+		<div class="dialog-body-date">
+		<div class="btn-icon-nodata"></div>
+			  <div class="dialog-body-date-inner">
+				  <div class="no-data-para-outer">No data found in your selection.</div>
+
+				  <div class="no-data-para-inner">Try another date selection.</div>
+             </div>
+		</div>
+</div><div id="selectTooLargeTimeFrame" style="display: none;">
+	<div class="dialog-body-date">
+        <div class="btn-icon-nodata"></div>
+		<div class="dialog-body-date-inner">
+			<div class="no-data-para-outer">Your chart scope is too large</div>
+			<div class="no-data-para-inner">Please reduce the timeframe or make some adjustments to reduce the amount of required data</div>
+		</div>
+	</div>
+</div>
+    <div id="selectChartRendering" data-testid="selectChartRendering" style="display: none;">
+		<div class="dialog-body-chart-render">
+		<div class="btn-icon-chart-render"></div>
+			  <div class="dialog-msg-chart-render">
+				  <div class="chart-msg-para-outer" data-testid="chartMsgParaOuter">Your Chart is rendering</div>
+
+				  <div class="chart-msg-para-inner">This can take some seconds. Please, be patient.</div>
+             </div>
+		</div>
+</div><div id="chart-table-wrap"><style>
+    [class*='axisReferenceVisualsMiddle']> path{
+        opacity: 0;
+    }
+    [class*='axisReferenceVisualsCeil']> text{
+        opacity: 0;
+    }
+    [class*='axisReferenceVisualsCeil']> rect{
+        opacity: 0;
+    }    
+</style>
+<div id="datapoint-count" style="visibility: hidden; height: 0px;">0</div>
+<div class="table" id="chart-table-id">
+    <div id="activityChart" class="column chart-line-dashboard"></div>
+    <div class="column chart-line-column-legend">
+        <div class="chart-legend">
+            <div class="chart-legend-title">
+                Most active (<span class="un-style-link-color">5 days</span>):            </div>
+                    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(document).ready(function () {
+            var is_enable = true;
+            var currentTheme = "-modern";
+            var current_chart = "msline";
+            var chart_width = '100%';
+            var chart_height = '100%';
+                        dataSource = {
+                chart: {
+                    showLegend: '0',
+                    showaxisline: '1',
+                    showyaxisline: '1',
+                    vline: 'true',
+                    xaxislinecolor: '#C0C0C0',
+                    yaxislinecolor: '#C0C0C0',
+                    divLineColor: '#d2e2ed',
+                    lineColor: '#184BBB',
+                    theme: 'fusion',
+                    width: '100%',
+                    baseFont: 'Arial',
+                    baseFontSize: '14',
+                    baseFontColor: '#4D4D4D',
+                    exportEnabled: '1',
+                    exportshowmenuitem: '0',
+                    showHoverEffect: 0,
+                    anchorHoverEffect: 1,
+                    plotHoverEffect: 1,
+                    drawAnchors: 1,
+                    // plotToolText: plot_tool_text,
+                    plotcolorintooltip: '0',
+                    drawCrossLine: '0',
+                    showPercentInTooltip: '1',
+                    showSum: '0',
+                    showvalues: "0",
+                },
+                                    categories: [{
+                            "vline": "true",
+                            "lineposition": "0",
+                            category: [{"label":"6\/20"},{"label":"6\/21"},{"label":"6\/22"},{"label":"6\/23"},{"label":"6\/24"},{"label":"6\/25"}]                    }],
+                    dataset: []                            };
+
+            
+                        dataSource = App.Charts.applyThemeToChart(currentTheme, dataSource);
+            dataSource.chart.usePattern = '1';
+            App.Charts.setInitials({
+                entity: "activity",
+                chart_type: "msline",
+                secondary_dimension: "",
+                start_date: '06/20/2025',
+                end_date: '06/25/2025',
+                project_ids: '',
+                checkCustomDate: "-1"	
+            });
+            try {
+                if (ClipboardItem) {
+                    $('#copy-to-clipboard').closest(".chartbar-btn-background").show();
+                }
+            } catch (e) {
+                $('#copy-to-clipboard').closest(".chartbar-btn-background").hide();
+            }
+
+            if (is_enable == true) {
+                let datapoints = $('#datapoint-count').length > 0 ? parseInt($('#datapoint-count').html(), 10) : 0;
+                App.Charts.action = new FusionCharts({
+                    type: 'msline',
+                    renderAt: 'activityChart',
+                    width: chart_width,
+                    height: chart_height,
+                    dataEmptyMessage:"",
+                    dataFormat: 'json',
+                    dataSource,
+                    events:{
+                        renderComplete: () => {
+                            App.Charts.setChartType($('div.chart-change-button[data-chart-type="msline"]'), additional_tooltip_text);
+                            App.Charts.showDataPoints(datapoints);
+                        }
+                    }
+                });
+                                    $('#selectNoDataTimeFrame, #selectTooLargeTimeFrame').hide();
+                    if(datapoints > 0) {
+                        App.Charts.action.render();
+                    }
+                    let additional_tooltip_text = "Click to change";
+                                App.Charts.showDataPoints(datapoints);
+            }
+        });
+    });
+</script></div>
+    <br><br>
+    <div id="activityChartTable" style="display:none;"></div>
+</div>
+<a download="TestRail-actions-130-20250718135557.png" href="#" id="dl" hidden="">download image</a>
+
+<script type="text/javascript">
+    $(function () {
+        $(document).ready(function () {
+            var is_enable = true;
+            var currentTheme = "-modern";
+            var current_chart = "msline";
+            var chart_width = '100%';
+            var chart_height = '100%';
+                        dataSource = {
+                chart: {
+                    showLegend: '0',
+                    showaxisline: '1',
+                    showyaxisline: '1',
+                    vline: 'true',
+                    xaxislinecolor: '#C0C0C0',
+                    yaxislinecolor: '#C0C0C0',
+                    divLineColor: '#d2e2ed',
+                    lineColor: '#184BBB',
+                    theme: 'fusion',
+                    width: '100%',
+                    baseFont: 'Barlow',
+                    baseFontSize: '14',
+                    baseFontColor: '#4D4D4D',
+                    exportEnabled: '1',
+                    exportshowmenuitem: '0',
+                    showHoverEffect: 0,
+                    anchorHoverEffect: 1,
+                    plotHoverEffect: 1,
+                    drawAnchors: 1,
+                    // plotToolText: plot_tool_text,
+                    plotcolorintooltip: '0',
+                    drawCrossLine: '0',
+                    showPercentInTooltip: '1',
+                    showSum: '0',
+                    showvalues: "0",
+                },
+                                    categories: [{
+                            "vline": "true",
+                            "lineposition": "0",
+                            category: []                    }],
+                    dataset: []                            };
+
+            
+                        dataSource = App.Charts.applyThemeToChart(currentTheme, dataSource);
+            dataSource.chart.usePattern = '1';
+            App.Charts.setInitials({
+                entity: "activity",
+                chart_type: "msline",
+                secondary_dimension: "",
+                start_date: '06/20/2025',
+                end_date: '06/25/2025',
+                project_ids: '112,108,113,110',
+                checkCustomDate: "-1"
+            });
+            try {
+                if (ClipboardItem) {
+                    $('#copy-to-clipboard').closest(".chartbar-btn-background").show();
+                }
+            } catch (e) {
+                $('#copy-to-clipboard').closest(".chartbar-btn-background").hide();
+            }
+
+            if (is_enable == true) {
+                App.Charts.action = new FusionCharts({
+                    type: 'msline',
+                    renderAt: 'activityChart',
+                    width: chart_width,
+                    height: chart_height,
+                    dataEmptyMessage:"",
+                    dataFormat: 'json',
+                    dataSource
+                });
+                // App.Charts.action.render();
+                let additional_tooltip_text = "Click to change";
+                App.Charts.setChartType($('div.chart-change-button[data-chart-type="msline"]'), additional_tooltip_text);
+                var datapoints = $('#datapoint-count').html();
+                App.Charts.showDataPoints(datapoints);
+                $('.chart-change-button').on('click', function () {
+                    let chart_type = $(this).attr('data-chart-type');
+                    App.Charts.setChartType(this);
+                    App.Charts.chartTypeOnChange(chart_type);
+                })
+            }
+        });
+
+		$('#csv-download').on('click', function() {
+			App.Charts.action.exportChart({
+				exportFormat: 'csv',
+				exportFileName: 'TestRail-actions-130-20250718135557'
+			});
+		});
+
+		$('#png-download').on('click', function() {
+			html2canvas($('#chart-line-fc')[0], {
+				height: 250,
+                y: 155
+			}).then(function(canvas) {
+				if(navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
+					var ctx = canvas.getContext("2d");
+					ctx.fillStyle = "#FFFFFF";
+					ctx.fillRect(0, 0, 30, 300);
+				}
+				var dl = document.getElementById('dl');
+				var dt = canvas.toDataURL('image/png');
+				dl.href = dt;
+				dl.click();
+			});
+		});
+    });
+</script>
+				</div>
+				<div id="drilldown_container"></div>
+
+					<div id="content_container">
+
+					<h1 class="top">Projects</h1>
+
+					<div id="favs" class="hidden">
+					<div class="table summary summary-auto">
+	</div>					</div>
+
+											<h2 id="activeHeader" class="hidden">
+							Active						</h2>
+													<div class="table summary summary-auto">
+			<div class="row project flex-projects-row" id="project-130">
+	<div class="column summary-column summary-column-icon flex-projects-1 icon-project-64 ">
+	</div>
+	<div class="column summary-column flex-projects-2">
+		<div class="summary-title text-ppp" style="position: relative; padding: 1px 0 1px 0">
+						<span style="position: absolute; top: -1px">
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.unstar(this, 130); return false;" id="project-starred-130" class="starred link-tooltip" tooltip-text="Remove from project favorites." style="display: none"></a>
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.star(this, 130); return false;" id="project-star-130" class="unstarred link-tooltip" tooltip-text="Mark as project favorite."></a>
+			</span>
+						<a href="index.php?/projects/overview/130" style="padding-left: 25px">QA eel</a>
+			<span class="hidden fav-busy"><div class="icon-progress-inline"></div></span>
+		</div>
+		<div class="summary-links text-secondary">			
+			<a class="link" href="index.php?/todos/overview/130">To-dos</a> |
+			<a class="link" href="index.php?/milestones/overview/130">Milestones</a> |
+			<a class="link" href="index.php?/runs/overview/130">Test Runs</a> |
+						<a class="link" href="index.php?/suites/view/130">Test Cases</a> |
+						<a class="link" href="index.php?/reports/overview/130">Reports</a>
+		</div>
+		<div class="summary-description">
+												Contains <strong>0</strong> active test runs and
+	<strong>0</strong> active milestones.									</div>
+		<div class="hidden details summary-expand">
+		</div>
+	</div>
+	<div class="column summary-column summary-column-toggle flex-projects-3">
+			</div>
+</div>
+			<div class="row project flex-projects-row" id="project-126">
+	<div class="column summary-column summary-column-icon flex-projects-1 icon-project-64 ">
+	</div>
+	<div class="column summary-column flex-projects-2">
+		<div class="summary-title text-ppp" style="position: relative; padding: 1px 0 1px 0">
+						<span style="position: absolute; top: -1px">
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.unstar(this, 126); return false;" id="project-starred-126" class="starred link-tooltip" tooltip-text="Remove from project favorites." style="display: none"></a>
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.star(this, 126); return false;" id="project-star-126" class="unstarred link-tooltip" tooltip-text="Mark as project favorite."></a>
+			</span>
+						<a href="index.php?/projects/overview/126" style="padding-left: 25px">QA tnh</a>
+			<span class="hidden fav-busy"><div class="icon-progress-inline"></div></span>
+		</div>
+		<div class="summary-links text-secondary">			
+			<a class="link" href="index.php?/todos/overview/126">To-dos</a> |
+			<a class="link" href="index.php?/milestones/overview/126">Milestones</a> |
+			<a class="link" href="index.php?/runs/overview/126">Test Runs</a> |
+						<a class="link" href="index.php?/suites/view/126">Test Cases</a> |
+						<a class="link" href="index.php?/reports/overview/126">Reports</a>
+		</div>
+		<div class="summary-description">
+												Contains <strong>0</strong> active test runs and
+	<strong>0</strong> active milestones.									</div>
+		<div class="hidden details summary-expand">
+		</div>
+	</div>
+	<div class="column summary-column summary-column-toggle flex-projects-3">
+			</div>
+</div>
+			<div class="row project flex-projects-row" id="project-115">
+	<div class="column summary-column summary-column-icon flex-projects-1 icon-project-64 ">
+	</div>
+	<div class="column summary-column flex-projects-2">
+		<div class="summary-title text-ppp" style="position: relative; padding: 1px 0 1px 0">
+						<span style="position: absolute; top: -1px">
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.unstar(this, 115); return false;" id="project-starred-115" class="starred link-tooltip" tooltip-text="Remove from project favorites." style="display: none"></a>
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.star(this, 115); return false;" id="project-star-115" class="unstarred link-tooltip" tooltip-text="Mark as project favorite."></a>
+			</span>
+						<a href="index.php?/projects/overview/115" style="padding-left: 25px">QA xax</a>
+			<span class="hidden fav-busy"><div class="icon-progress-inline"></div></span>
+		</div>
+		<div class="summary-links text-secondary">			
+			<a class="link" href="index.php?/todos/overview/115">To-dos</a> |
+			<a class="link" href="index.php?/milestones/overview/115">Milestones</a> |
+			<a class="link" href="index.php?/runs/overview/115">Test Runs</a> |
+						<a class="link" href="index.php?/suites/view/115">Test Cases</a> |
+						<a class="link" href="index.php?/reports/overview/115">Reports</a>
+		</div>
+		<div class="summary-description">
+												Contains <strong>0</strong> active test runs and
+	<strong>0</strong> active milestones.									</div>
+		<div class="hidden details summary-expand">
+		</div>
+	</div>
+	<div class="column summary-column summary-column-toggle flex-projects-3">
+			</div>
+</div>
+			<div class="row project flex-projects-row" id="project-110">
+	<div class="column summary-column summary-column-icon flex-projects-1 icon-project-64 ">
+	</div>
+	<div class="column summary-column flex-projects-2">
+		<div class="summary-title text-ppp" style="position: relative; padding: 1px 0 1px 0">
+						<span style="position: absolute; top: -1px">
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.unstar(this, 110); return false;" id="project-starred-110" class="starred link-tooltip" tooltip-text="Remove from project favorites." style="display: none"></a>
+				<a href="javascript:void(0)" onclick="this.blur(); App.Projects.star(this, 110); return false;" id="project-star-110" class="unstarred link-tooltip" tooltip-text="Mark as project favorite."></a>
+			</span>
+						<a href="index.php?/projects/overview/110" style="padding-left: 25px">zz</a>
+			<span class="hidden fav-busy"><div class="icon-progress-inline"></div></span>
+		</div>
+		<div class="summary-links text-secondary">			
+			<a class="link" href="index.php?/todos/overview/110">To-dos</a> |
+			<a class="link" href="index.php?/milestones/overview/110">Milestones</a> |
+			<a class="link" href="index.php?/runs/overview/110">Test Runs</a> |
+						<a class="link" href="index.php?/suites/view/110">Test Cases</a> |
+						<a class="link" href="index.php?/reports/overview/110">Reports</a>
+		</div>
+		<div class="summary-description">
+												Contains <strong>0</strong> active test runs and
+	<strong>0</strong> active milestones.									</div>
+		<div class="hidden details summary-expand">
+		</div>
+	</div>
+	<div class="column summary-column summary-column-toggle flex-projects-3">
+			</div>
+</div>
+	</div>						
+					
+									</div>
+					</div>
+		<div class="tab tab2" style="display:none;">
+												
+			
+			
+															<div class="empty empty-with-explanation-cross-project">
+						<div class="empty-explanation empty-explanation-cross-project">
+							<div class="empty-explanation-title-cross-project">Explore Test Execution Report</div>
+							<div class="empty-explanation-body empty-explanation-body-cross-project"><a href="index.php?/cross_project_reports/add_job/&amp;plugin=cross_projects_summary">Projects Summary</a><br><a href="index.php?/cross_project_reports/add_job/2&amp;plugin=cross_projects_users_workload_summary">User Workload</a></div>
+						</div>
+						<div class="empty-info-cross-project">
+							<div class="empty-title-cross-project">No project Reports have been created yet.</div>
+							<div class="empty-body-cross-project-list"><p>Once the Report is generated, it will appear on this page. You have the option to create or schedule Reports <br> using the Report templates located in the sidebar. </p></div>
+						</div>
+					</div>
+							
+									
+						<script type="text/javascript">
+				$('.delete-selected').hide();
+				function SelectAllReports(report_type) {
+					let checked_status = $(report_type).is(':checked');
+					let parent = '#' + $(report_type).parent().closest('div').attr('id');
+					$(parent)
+						.find('input[type=checkbox]')
+						.not(':disabled')
+						.prop(
+							'checked',
+							checked_status
+						);
+					$('.delete-selected').css(
+						'display',
+						$('input:checked[name="report"]').length
+							? 'block'
+							: 'none'
+					);
+				}
+
+				$('#content').on('change', 'input:checkbox[name="report"]', function() {
+					let parent = '#' + $(this).parent().closest('div').attr('id');
+					$(parent)
+						.find('input:checkbox[name=select_all]')
+						.prop(
+							'checked',
+							$(parent + ' input:checkbox[name="report"]').length
+								=== $(parent + ' input:checked[name="report"]').length
+						);
+					$('.delete-selected').css(
+						'display',
+						$('input:checked[name="report"]').length > 0
+							? 'block'
+							: 'none'
+					);
+				});
+			</script>
+			
+<div class="dialog" id="shareReportDialog" style="width: 500px">
+	<div class="dialog-title">Share Report</div>
+	<form id="shareReportForm" action="post">
+		<div class="dialog-body">
+			<div class="message message-error validationError" id="shareReportErrors" style="white-space: pre-line">
+            </div>
+			<div class="message message-success successPanel" id="shareReportSuccess" data-testid="messageSuccessDivBox" style="display: none">
+                Successfully shared the report via email.            </div>
+			<div class="share-report-box-title">
+                Email the Report as:            </div>
+            <div id="shareReportAttachmentContainer">
+                <input type="hidden" id="shareReportAttachment" name="shareReportAttachment" value="0">
+                <div class="checkbox" style="margin-left: 5px; margin-bottom: 8px">
+                    <label>
+                        <div class="share-report-box-title-small">
+                            HTML attachment:                        </div>
+                        <input type="checkbox" id="shareReportHTMLAttachment" name="shareReportHTMLAttachment" value="1">
+                    </label>
+                    <div class="form-description share-report-description">
+                        
+<ul> <li>Ideal for reports with interactive elements such as hover effects or expandable tables. (Note: Email provides may block HTML Reports)</li>
+<li>Best for large Reports for best performance.</li></ul>                    </div>
+                </div>
+                <div class="checkbox" style="margin-left: 5px; margin-bottom: 8px">
+                    <label><div class="share-report-box-title-small">
+                        PDF attachment:                        </div>
+                        <input type="checkbox" id="shareReportPDFAttachment" name="shareReportPDFAttachment" value="1">
+                    </label>
+                    <div class="form-description share-report-description-pdf">
+                        
+<ul><li> Best for small Reports</li>
+<li>Consider splitting large Reports into smaller sections.</li></ul>                    </div>
+                </div>
+                <div>
+                    <textarea id="shareReportAttachmentRecipients" name="shareReportAttachmentRecipients" class="form-control processed shared-report-textarea recipient-emails">person1@example.com
+person2@example.com                    </textarea>
+                    <div class="form-description share-report-description-bottom">
+                        Please enter one email address per line.                    </div>
+                </div>
+                <div id="shareReportLinkContainer" class="form-group">
+                    <div class="checkbox" style="margin-left: 5px; margin-bottom: 8px">
+                        <label><div class="share-report-box-title-small">
+                            Link to the Report:                            </div>
+                            <input type="checkbox" id="shareReportLink" name="crossReportLinkToReport" value="1">
+                        </label>
+                        <div class="form-description share-report-description-pdf">
+                            Send the report link directly to users within TestRail via email.                        </div>
+                    </div>
+                    <select id="shareReportLinkRecipients" name="shareReportLinkRecipients" class="form-control form-select" style="height: 100px; width: 460px" multiple="multiple">
+                    </select>
+                    <div class="form-description share-report-description-bottom">
+                        You can select multiple users by holding cmd/ctl on your keyboard                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="button-group dialog-buttons-highlighted">
+			<button class="button button-left button-positive button-ok dialog-action-default" id="shareReportSubmit" type="submit">
+				Share			</button>
+			<a class="button button-left button-negative button-cancel dialog-action-close" tabindex="0">
+				Cancel			</a>		
+		</div>
+	</form>
+</div>
+
+			<!-- Since content was closed in middle.php and now it is
+			moved to header.php so content blocks are closed here -->
+			</div>
+			</div>
+
+				
+		<div id="qpane-splitter" class="column splitter qpane-splitter" style="display: none;">
+	</div>
+			<div id="qpane" class="column qpane " style="width: 600px; display: none; top: 48px;">
+		<div id="qpane-empty" class="qpane-empty hidden">
+			<div class="qpane-empty-header">
+				No test case selected.			</div>
+			<div class="qpane-empty-body">
+				You can select a different group or change the filters.			</div>
+		</div>
+		<div id="qpane-inner">
+			<div id="qpaneSticky">
+				<div id="qpane-content" data-testid="runFastTrackContent">
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="dialog bulk-delete-dialog" id="bulkDeleteDialog" data-testid="bulkDeleteDialog">
+    <div class="dialog-title">Confirmation</div>
+    <div class="dialog-body">
+        <p class="top bottom dialog-message"><strong>Delete all selected reports?</strong> This action cannnot be <br>undone.</p>
+        <p class="dialog-extra text-delete"></p>
+        <div class="message message-delete bottom delete-confirm-container confirm-container">
+            <div class="checkbox">
+                <label>
+                    <span class="dialog-confirm"><span style="color:red">Yes, delete all selected Reports (cannot be undone)</span></span>
+                    <span class="dialog-confirm-busy"></span>
+                    <input id="confirm-check" type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <a class="button button-black button-black-disabled button-left button-positive button-disabled dialog-action-default" tabindex="-1" data-testid="deleteCaseDialogActionDefault">
+            Delete        </a>
+        <a class="button button-left button-delete button-disabled button-hidden button-no-margin-right dialog-action-secondary" data-testid="deleteCaseDialogActionSecondary">
+        </a>
+        <a class="button button-cancel button-left button-negative dialog-action-close" tabindex="0" data-testid="deleteCaseDialogActionClose">
+            Cancel        </a>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('#confirm-check').change(function() {
+            const isChecked = $(this).is(':checked');
+            const deleteButton = $('[data-testid="deleteCaseDialogActionDefault"]');
+            deleteButton.attr('tabindex', isChecked ? '0' : '-1');
+        });
+    });
+</script>		</div>
+	</div>
+</div>
+
+<!-- Since content was closed in middle.php and now it is
+moved to header.php so content blocks are closed here -->
+</div>
+</div>
+
+	
+		<div id="qpane-splitter" class="column splitter qpane-splitter" style="display: none;" aria-hidden="true">
+	</div>
+			<div id="qpane" class="column qpane " style="width: 600px; display: none; top: 48px;" aria-hidden="true">
+		<div id="qpane-empty" class="qpane-empty hidden">
+			<div class="qpane-empty-header">
+				No test case selected.			</div>
+			<div class="qpane-empty-body">
+				You can select a different group or change the filters.			</div>
+		</div>
+		<div id="qpane-inner">
+			<div id="qpaneSticky">
+				<div id="qpane-content" data-testid="runFastTrackContent">
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+
+
+
+<script>
+    // Click event on the button to toggle the class
+    $(window).on("click", function () {
+        const searchBox = document.querySelector('#top_search_dialog');
+        if (searchBox && searchBox.classList.contains('hidden')) {
+            $("body").removeClass("modal-open");
+        } else if (searchBox) {
+            $("body").addClass("modal-open");
+        }
+    });
+
+    $(document).ready(function () {
+        var tooltip = $('#tooltip');
+        // Hide the tooltip on scroll
+        $(window).scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+
+        $('.sidebar-content').scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+
+        $('.projects_search').scroll(function () {
+            setTimeout(() => {
+                tooltip.hide();
+            }, 50);
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    var Consts = {};
+    Consts.ajaxBaseUrl = 'index.php?';
+        Consts.ajaxErrorMessage = 'An error occurred during the last operation or your installation is currently in maintenance mode. Please try again or refresh the current page.';
+    Consts.resourceBaseUrl = 'https://static.testrail.io/9.3.2.1002/';
+        Consts.ajaxCsrf = 'SBGEvXLT32VSFhD7gFot';
+    Consts.ajaxVersion = '9.3.2.1002';
+    Consts.dialogTitleError = 'Error';
+    Consts.statusFailed = 5;
+    Consts.statusRetest = 4;
+    Consts.statusBlocked = 2;
+    Consts.statusPassed = 1;
+    Consts.statusUntested = 3;
+    Consts.statusDefault = 1;
+	Consts.minWidth = 700;
+	Consts.minWidthOffset = 300;
+	Consts.minWidthVariable = 50;
+    Consts.hidePendoFromPrint = 0;
+    Consts.attachmentPatternWithoutContentEditable = /^<([a-zA-Z0-9]+)[^>]*contenteditable\s*=\s*"false"[^>]*>/;
+
+    var emojiPattern = "\/(?:[\\u231A-\\u231B\\u23E9-\\u23EC\\u23F0\\u23F3\\u25AA-\\u25AB\\u25FB-\\u25FE\\u2600-\\u26FF\\u2700-\\u27BF\\u2934-\\u2935\\u2B05-\\u2B07\\u2B1B-\\u2B1C\\u2B50\\u2B55\\u3030\\u303D\\u3297\\u3299\\uD83C[\\uDC00-\\uDFFF]|\\uD83D[\\uDC00-\\uDFFF]|\\uD83E[\\uDD00-\\uDFFF]|\\uD83F[\\uDC00-\\uDFFF])(?:\\uFE0F|\\u200D[\\u231A-\\u26FF\\u2700-\\u27BF\\uD83C-\\uD83E]+)*\/u";
+    emojiPattern = emojiPattern.replace(/\\x\{/g, '\\u{');
+    var patternBody = emojiPattern.slice(1, emojiPattern.lastIndexOf('/'));
+    var patternFlags = emojiPattern.slice(emojiPattern.lastIndexOf('/') + 1);
+    Consts.emojiPattern = new RegExp(patternBody, patternFlags);
+    var currencyList = [36,8364,163,165,8366,3647,8356,65509,65020,164,402,8361,8362,8363,162];
+    Consts.currencyList =currencyList;
+</script>
+
+
+<div class="dialog" id="messageDialog" style="width: 350px; word-wrap: break-word" data-testid="deleteAttachmentMessageDialog" aria-hidden="true">
+	<div class="dialog-title"></div>
+	<div class="dialog-body dialog-message-body">
+		<p style="margin: 0" class="dialog-message" data-testid="deleteAttachmentDialogMessage"></p>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default" tabindex="0">
+			OK		</a>
+	</div>
+</div><div class="dialog" id="confirmDialog" data-testid="addEditCaseConfirmDialog" style="width: 350px" aria-hidden="true">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p style="margin: 0" class="dialog-message"></p>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default" tabindex="0" data-testid="editNameDialogOkButton">
+			Yes		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close" tabindex="0">
+			No		</a>		
+	</div>
+</div>
+
+<div id="confirmDialogOkCancel" class="dialog" aria-hidden="true">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body"><p class="dialog-message"></p></div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default">
+			OK		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+<div id="tooltip" class="tooltip" style="width: auto;" aria-hidden="true">
+	<div class="tooltip-pointer-up"></div>
+	<div class="tooltip-pointer-down"></div>
+	<div class="tooltip-pointer-right"></div>
+	<div class="tooltip-header"></div>
+	<p style="margin: 0"></p>
+</div><div class="dialog" id="deleteDialog" data-testid="caseFieldsTabDeleteDialog" style="width: 448px" aria-hidden="true">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message"></p>
+		<p class="dialog-extra text-delete"></p>
+		<div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1">
+			<div class="checkbox" data-testid="caseFieldsTabDeleteDialogCheckbox">
+				<label>
+					<span class="dialog-confirm"></span>
+					<span class="dialog-confirm-busy"><div class="icon-progress-inline"></div></span>
+					<input type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default" tabindex="0" data-testid="caseFieldsTabDeleteDialogButtonOk">
+			OK		</a>
+		<a class="button button-left button-positive button-disabled button-hidden button-no-margin-right dialog-action-secondary" data-testid="deleteCaseDialogActionSecondary">
+		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close" tabindex="0">
+			Cancel		</a>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		App.Controls.triggerClickOnEnter('#deleteDialog .dialog-action-close', true);
+		App.Controls.triggerClickOnEnter('.dialog-action-default');
+	});
+</script><div class="dialog" id="dpaDialog" style="max-width: 725px" aria-hidden="true">
+    <div class="dialog-title">Confirmation</div>
+    <div class="dialog-body">
+        <p class="top bottom dialog-message"></p>
+        <p class="dialog-extra text-delete"></p>
+
+        <form action="index.php?/admin/users/accept_data_processing_agreement" id="dpa_form" method="post">        <input type="hidden" name="_token" value="SBGEvXLT32VSFhD7gFot">
+        <div class="form-group">
+            <label for="full_name">Please enter your full name:<span class="form-required">*</span></label>
+            <input class="form-control " type="text" name="full_name" id="full_name" maxlength="250" value="">
+        </div>
+
+        </form>
+        <div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1; padding-bottom: 50px">
+            <div class="checkbox">
+                <label>
+                    <span class="dialog-confirm"></span>
+                    <input type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <a class="button button-ok button-ok-disabled button-left button-positive button-disabled dialog-action-default">
+            Submit        </a>
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+</div>
+<div class="dialog" id="trEnterpriseDialog" style="width: 350px; word-wrap: break-word" aria-hidden="true">
+    <div class="dialog-title"></div>
+    <form action="index.php?/mysettings/tr_enterprise_banner_setting" id="tr_enterprise_form" method="post">    <input type="hidden" name="_token" value="SBGEvXLT32VSFhD7gFot">    <div class="dialog-body">
+        <p style="margin: 0" class="dialog-message"></p>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio" name="tr_enterprise_banner_display" value="0" checked="">
+                    Remove for this Session                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" class="radio" name="tr_enterprise_banner_display" value="1">
+                    Remove forever                </label>
+            </div>
+        </div>
+    </div>
+    <div class="button-group dialog-buttons-highlighted">
+        <input type="submit" value="Submit" class="button button-ok button-left button-positive dialog-action-default">
+        <a class="button button-cancel button-left button-negative dialog-action-close">
+            Cancel        </a>
+    </div>
+    </form></div>
+
+<div class="dialog" id="deleteEntityAttachmentDialog" data-testid="deleteEntityAttachmentDialog" style="width: 425px" aria-hidden="true">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message" data-testid="deleteSelectedAttachment"></p>
+		<p class="dialog-extra text-delete"></p>
+		<div class="message message-delete bottom delete-confirm-container" style="margin-top: 12px; line-height: 1">
+			<div class="checkbox">
+				<label>
+					<span class="dialog-confirm">Don’t show me this again</span>
+					<input id="deleteDontShowAgain" type="checkbox" value="1" name="deleteCheckbox" data-testid="deleteCheckBoxTestId">
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default delete-entity-attachment-button-submit" data-testid="deleteEntityAttachmentButtonSubmit">
+			Delete		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+
+<script>
+	$(function () {
+		$(document).on('click', '.dialog-buttons-highlighted .delete-entity-attachment-button-submit', function(evt)
+		{
+			App.Attachments.dontShowEntityDeleteDialog = $('#deleteDontShowAgain').prop('checked');
+			App.Ajax.call({
+                target: '/mysettings/ajax_delete_entity_attachment_setting',
+
+                arguments: {
+                    dont_show: $('#deleteDontShowAgain').prop('checked')
+                },
+
+                error: function error(data) {
+                    App.Ajax.handleError(data);
+                }
+            });
+		});
+	});
+</script>
+<div class="dialog" id="completeDeleteEntityAttachmentDialog" data-testid="completeDeleteEntityAttachmentDialog" style="width: 425px" aria-hidden="true">
+	<div class="dialog-title">Confirmation</div>
+	<div class="dialog-body">
+		<p class="top bottom dialog-message" data-testid="deleteSelectedAttachment"></p>
+        <br>
+        <div class="dialog-filenames">
+            <ul class="dialog-filenames-list"></ul>
+        </div>
+	</div>
+	<div class="button-group dialog-buttons-highlighted">
+		<a class="button button-ok button-left button-positive dialog-action-default delete-entity-attachment-button-submit" data-testid="deleteEntityAttachmentButtonSubmit">
+			Delete		</a>
+		<a class="button button-cancel button-left button-negative dialog-action-close">
+			Cancel		</a>
+	</div>
+</div>
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#bannerLink').bubble({
+            bubble: '#enterpriseBubble',
+            inContainer: true
+        });
+
+        $('#content').on('change', 'input:checkbox[name="entity_run"]', function() {
+            delselectAll(this, 'run')
+        });
+
+        $('#content').on('change', 'input:checkbox[name="entity_milestones"]', function() {
+            delselectAll(this, 'milestones')
+        });
+    });
+
+    function delselectAll (type, entity) {
+        let parent = $(type).data('option');
+        if (parent === undefined) {
+            $('input:checkbox[name=select_all]').each(function() {
+                let select = $(this).parent().closest('div').attr('id');
+
+                if ($('#' + select).find(type).length > 0) {
+                    parent = select;
+                }
+            });
+        }
+        let selector = '#' + parent;
+        $(selector)
+            .find('input:checkbox[name="select_all"]')
+            .prop(
+                'checked',
+                $(selector + ' input:checked[name="entity_'+ entity +'"]').length ===
+                $(selector + ' input:checkbox[name="entity_'+ entity +'"]').length
+            );
+        $('#delete-' + entity).css(
+            'display',
+            $('input:checked[name="entity_'+ entity +'"]').length > 0
+                ? 'block'
+                : 'none'
+        );
+    }
+
+    function SelectAllEntity (type) {
+        let parent = $(type).parent().closest('div').attr('id');
+        let checked_status = $(type).is(':checked');
+        $('#' + parent).find('input[type=checkbox]')
+            .attr('data-option', parent)
+            .not(':disabled')
+            .prop(
+                'checked',
+                checked_status
+            );
+        let selector = $('#' + parent).find('input:checkbox[name="entity_milestones"]').length
+            ? 'milestones'
+            : 'run';
+        $('#delete-' + selector).css(
+            'display',
+            checked_status && $('input:checked[name="entity_'+ selector +'"]').length
+                ? 'block'
+                : 'none'
+            );
+    }
+</script>
+
+
+												
+
+	
+<div id="projectGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">1/6</span>
+		Create a Project	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Welcome! Start by creating your first project. Projects in TestRail usually represent a product or software project and serve as organizational unit for cases, results and milestones. You can create as many projects as you like.</p>
+		<div class="tooltip-goal-image goal-project-help"></div>
+	</div>
+</div><div id="casesGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">2/6</span>
+		Add Test Cases	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Test cases represent a certain feature, behavior or functionality you wish to test. They often contain a description, a list of steps and expected results. Cases are organized in sections to make it easy to group related cases together.</p>
+		<div class="tooltip-goal-image goal-cases-help"></div>
+	</div>
+</div><div id="runGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">3/6</span>
+		Start a Test Run	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">To execute tests and enter results for your cases, you start a test run. You can have multiple test runs over time and reuse your test cases across runs. A test run has a status and you can easily follow its progress and test activity.</p>
+		<div class="tooltip-goal-image goal-run-help"></div>
+	</div>
+</div><div id="resultsGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">4/6</span>
+		Add Test Results	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Once you've added a test run, you can start testing and record results. A result has a status such as <em>Passed</em> or <em>Failed</em> and the statuses are signaled by different colors. Adding results contributes to the overall status and progress of the test run.</p>
+		<div class="tooltip-goal-image goal-results-help"></div>
+	</div>
+</div>
+<div id="usersGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">5/6</span>
+		Invite Team Members	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">TestRail is especially useful when used with a team. Invite other team members and build your test case repository, assign test runs and record results together. Easily track the workload and progress from the Todo tab for your entire team.</p>
+		<div class="tooltip-goal-image goal-users-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to invite other users for now				<input type="checkbox" id="usersGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#usersGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(5, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="integrationGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">6/6</span>
+		Set up Integration	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Integrate TestRail with your existing tools such as issue or bug trackers (such as Jira), requirement management tools, wiki software and many more. Collaborate with your dev team, run traceability reports and link cases &amp; results to issues and defects.</p>
+		<div class="tooltip-goal-image goal-integration-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to integrate TestRail with other tools for now				<input type="checkbox" id="integrationGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#integrationGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(6, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="goals" class="goals" aria-hidden="true">
+	<div id="goals-banner" class="goals-banner ">
+		<span id="goals-cancel" class="goals-cancel hidden">
+			<a class="link-noline nolink" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoals(false); return false;"><div class="icon-cancel"></div></a>
+		</span>
+		<div class="goals-banner-inner">
+			<ol class="goals-progress">
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Create a project</span>
+																									<div class="goals-progress-marker link-tooltip goal-project-checked" tooltip-id="#projectGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Add cases</span>
+																									<div class="goals-progress-marker link-tooltip goal-cases-checked" tooltip-id="#casesGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Start a run</span>
+																									<div class="goals-progress-marker link-tooltip goal-run" tooltip-id="#runGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Add results</span>
+																									<div class="goals-progress-marker link-tooltip goal-results" tooltip-id="#resultsGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Invite users</span>
+																									<div class="goals-progress-marker link-tooltip goal-users" tooltip-id="#usersGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Set up integration</span>
+																									<div class="goals-progress-marker link-tooltip goal-integration" tooltip-id="#integrationGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+							</ol>
+		</div>
+		<div id="goals-start" class="goals-start hidden">
+			<div class="goal-start"></div>
+		</div>
+		<div id="goals-finish" class="goals-finish hidden">
+			<div class="goal-finish"></div>
+		</div>
+		<div id="goals-next" class="goals-next hidden">
+			<img src="https://static.testrail.io/9.3.2.1002/images/layout/blank.gif" usemap="#goalsNextMap" class="goal-next">
+			<map name="goalsNextMap">
+				<area shape="rect" coords="691,13,726,48" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoalsNext(); return false;">
+				<area shape="rect" coords="64,305,254,339" target="_blank" href="https://support.testrail.com/">
+				<area shape="rect" coords="280,305,470,339" target="_blank" href="http://blog.gurock.com/">
+				<area shape="rect" coords="496,305,686,339" target="_blank" href="http://www.gurock.com/testrail/videos/introduction-projects/">
+			</map>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+				var timer = null;
+		$('#goals').off('mouseenter').on('mouseenter', function()
+		{
+			timer = setTimeout(
+				function()
+				{
+					$('#goals-cancel').fadeTo(250, 1);
+				},
+				2500
+			);
+		});
+
+		$('#goals').off('mouseleave').on('mouseleave', function()
+		{
+			$('#goals-cancel').hide();
+			if (timer)
+			{
+				clearTimeout(timer);
+				timer = null;
+			}
+		});
+			}
+);
+</script>
+<div class="dialog dialog_attachment" id="attachmentInfoDialog" data-testid="attachmentInfoDialog" style="width: 900px; height: 531px;" aria-hidden="true"></div>
+<div id="newAttachmentTemplate" style="display: none;" aria-hidden="true">
+	<div style="width: 150px; height: 150px; {{attachment_thumbnail}}" class="attachment-block attachment-{{attachment_icon}} {{attachment_selected_class}} lazy" tabindex="0" data-testid="attachmentsTab" id="libraryAttachment-{{attachment_id}}" onclick="App.Attachments.showInfoDialog('{{attachment_id}}', false);" title="{{attachment_name}}">
+	<div class="attachment-icon" style="{{attachment_icon_style}}"></div>
+	<div class="attachment-name">
+		{{attachment_truncated_name}}
+	</div>
+	<img {{attachment_src_tag}}="{{attachment_imgurl}}" {{attachment_onerror_tag}}="{{attachment_img_onerror}}" class="hidden-image">
+	<div tabindex="0" class="attachment-selection {{attachment_selected_class}}" data-testid="attachmentsTabAttachmentSelection" onclick="App.Attachments.toggleSelection('{{attachment_id}}', event, {{project_id}});"></div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		const attachmentId = 'libraryAttachment-{{attachment_id}}';
+		const selector = '#' + CSS.escape(attachmentId);
+		
+		$(selector).on('keydown', function(e) {
+			if (e.key === "Enter" || e.keyCode === 13) {
+				$(this).click();
+			}
+		});
+		
+		$(selector + ' .attachment-selection').on('keydown', function(e) {
+			if (e.key === "Enter") {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				$(this).click();
+			}
+		});
+	});
+</script></div>
+<div id="libraryAttachmentsAddItemTemplate" style="display: none;" aria-hidden="true">
+	<div id="{{element_id}}" class="attachment-library-add" tabindex="0">
+	<div class="attachment-library-add-icon"></div>
+</div>
+<script>
+	$('.attachment-library-add').on('keydown', function(e) {
+		if (e.key === "Enter" || e.keyCode === 13) {
+			$(this).click();
+		}
+	});
+</script>
+</div>
+
+												
+
+	
+<div id="projectGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">1/6</span>
+		Create a Project	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Welcome! Start by creating your first project. Projects in TestRail usually represent a product or software project and serve as organizational unit for cases, results and milestones. You can create as many projects as you like.</p>
+		<div class="tooltip-goal-image goal-project-help"></div>
+	</div>
+</div><div id="casesGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">2/6</span>
+		Add Test Cases	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Test cases represent a certain feature, behavior or functionality you wish to test. They often contain a description, a list of steps and expected results. Cases are organized in sections to make it easy to group related cases together.</p>
+		<div class="tooltip-goal-image goal-cases-help"></div>
+	</div>
+</div><div id="runGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">3/6</span>
+		Start a Test Run	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">To execute tests and enter results for your cases, you start a test run. You can have multiple test runs over time and reuse your test cases across runs. A test run has a status and you can easily follow its progress and test activity.</p>
+		<div class="tooltip-goal-image goal-run-help"></div>
+	</div>
+</div><div id="resultsGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">4/6</span>
+		Add Test Results	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Once you've added a test run, you can start testing and record results. A result has a status such as <em>Passed</em> or <em>Failed</em> and the statuses are signaled by different colors. Adding results contributes to the overall status and progress of the test run.</p>
+		<div class="tooltip-goal-image goal-results-help"></div>
+	</div>
+</div>
+<div id="usersGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">5/6</span>
+		Invite Team Members	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">TestRail is especially useful when used with a team. Invite other team members and build your test case repository, assign test runs and record results together. Easily track the workload and progress from the Todo tab for your entire team.</p>
+		<div class="tooltip-goal-image goal-users-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to invite other users for now				<input type="checkbox" id="usersGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#usersGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(5, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="integrationGoalHelp" class="tooltip tooltip-goal" aria-hidden="true">
+	<div class="tooltip-goal-title">
+		<span class="tooltip-goal-step">6/6</span>
+		Set up Integration	</div>
+	<div class="tooltip-goal-body">
+		<p class="top">Integrate TestRail with your existing tools such as issue or bug trackers (such as Jira), requirement management tools, wiki software and many more. Collaborate with your dev team, run traceability reports and link cases &amp; results to issues and defects.</p>
+		<div class="tooltip-goal-image goal-integration-help"></div>
+				<div class="checkbox" style="margin-top: 1em">
+			<label>
+				I don't plan to integrate TestRail with other tools for now				<input type="checkbox" id="integrationGoalToggle">
+			</label>
+		</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		$('#integrationGoalToggle').off('click').on(
+			'click',
+			function()
+			{
+				App.Users.setGoal(6, this.checked);
+			}
+		);
+	}
+);
+</script>
+
+<div id="goals" class="goals" aria-hidden="true">
+	<div id="goals-banner" class="goals-banner ">
+		<span id="goals-cancel" class="goals-cancel hidden">
+			<a class="link-noline nolink" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoals(false); return false;"><div class="icon-cancel"></div></a>
+		</span>
+		<div class="goals-banner-inner">
+			<ol class="goals-progress">
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Create a project</span>
+																									<div class="goals-progress-marker link-tooltip goal-project-checked" tooltip-id="#projectGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step goals-progress-step-done">
+						<span class="goals-progress-title">Add cases</span>
+																									<div class="goals-progress-marker link-tooltip goal-cases-checked" tooltip-id="#casesGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Start a run</span>
+																									<div class="goals-progress-marker link-tooltip goal-run" tooltip-id="#runGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Add results</span>
+																									<div class="goals-progress-marker link-tooltip goal-results" tooltip-id="#resultsGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Invite users</span>
+																									<div class="goals-progress-marker link-tooltip goal-users" tooltip-id="#usersGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+																			<li class="goals-progress-step ">
+						<span class="goals-progress-title">Set up integration</span>
+																									<div class="goals-progress-marker link-tooltip goal-integration" tooltip-id="#integrationGoalHelp" tooltip-position="top" tooltip-width="400"></div>
+					</li>
+							</ol>
+		</div>
+		<div id="goals-start" class="goals-start hidden">
+			<div class="goal-start"></div>
+		</div>
+		<div id="goals-finish" class="goals-finish hidden">
+			<div class="goal-finish"></div>
+		</div>
+		<div id="goals-next" class="goals-next hidden">
+			<img src="https://static.testrail.io/9.3.2.1002/images/layout/blank.gif" usemap="#goalsNextMap" class="goal-next">
+			<map name="goalsNextMap">
+				<area shape="rect" coords="691,13,726,48" href="javascript:void(0)" onclick="this.blur(); App.Users.hideGoalsNext(); return false;">
+				<area shape="rect" coords="64,305,254,339" target="_blank" href="https://support.testrail.com/">
+				<area shape="rect" coords="280,305,470,339" target="_blank" href="http://blog.gurock.com/">
+				<area shape="rect" coords="496,305,686,339" target="_blank" href="http://www.gurock.com/testrail/videos/introduction-projects/">
+			</map>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+				var timer = null;
+		$('#goals').off('mouseenter').on('mouseenter', function()
+		{
+			timer = setTimeout(
+				function()
+				{
+					$('#goals-cancel').fadeTo(250, 1);
+				},
+				2500
+			);
+		});
+
+		$('#goals').off('mouseleave').on('mouseleave', function()
+		{
+			$('#goals-cancel').hide();
+			if (timer)
+			{
+				clearTimeout(timer);
+				timer = null;
+			}
+		});
+			}
+);
+</script>
+
+
+<script>
+    var text_format_type = "" ;
+</script>
+            <script type="text/javascript" src="https://static.testrail.io/9.3.2.1002/js/bundle/common-deps-footer.js"></script>
+        <script type="text/javascript" src="https://static.testrail.io/9.3.2.1002/js/bundle/application-entrypoint.js"></script>
+        <script type="text/javascript" defer="" fetchpriority="low" src="https://static.testrail.io/9.3.2.1002/js/bundle/common-deps-header-deferred.js"></script>
+        <script type="text/javascript" src="https://static.testrail.io/9.3.2.1002/js/bundle/application.search.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+		App.Translations.add(
+		"timespans_hour_short",
+		"h"	);
+		App.Translations.add(
+		"timespans_minute_short",
+		"m"	);
+		App.Translations.add(
+		"timespans_second_short",
+		"s"	);
+		App.Translations.add(
+		"auth_confirm_not_match_password",
+		"Password doesn't match."	);
+		App.Translations.add(
+		"auth_password_good",
+		"Good"	);
+		App.Translations.add(
+		"auth_password_weak",
+		"Weak"	);
+	});
+</script>
+<script type="application/javascript">
+    if (!Consts.hidePendoFromPrint) {
+        (function(apiKey){ // <-- passed in at the bottom
+            (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+            v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+                o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                // Create a `<script>` tag linked to your application-specific Agent build from our CDN...
+                y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+                z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);
+            })(window,document,'script','pendo');
+            pendo.initialize({
+                sanitizeUrl: function(url) {
+                    return url.replace('index.php?', 'index.php')
+                },
+                visitor: {
+                    id: '919515-1',
+                    is_admin: true,
+                    is_active: true,
+                    userLanguage: 'en'
+                },
+                account: {
+                    id: '919515',
+                    instanceLanguage: 'en'
+                }
+            });
+        })('1c20428c-1995-4c00-6e1c-daff12af9c00');
+    }
+</script>
+<script>
+  var currentProjectId = '' || "0";
+    var scrollWidth = 0;
+    $(document).on('mousedown', '.field-editor', function (e)
+    {
+        var currentWidth = e.offsetX;
+        var key = "";
+        var selector ="#"+e.currentTarget.id
+        if (currentProjectId == "0")
+        {
+            var nProject = getURL();
+            key = nProject +"-"+selector+"-width";
+        }
+        else
+        {
+            key = currentProjectId +"-"+selector+"-width";
+        }
+
+        var editorWidth = JSON.parse(localStorage.getItem(key));
+        if(!editorWidth)
+        {
+            editorWidth = $(selector).width()-12;
+        }
+        scrollWidth = currentWidth+12-editorWidth;
+    });
+    $(function()
+    {
+        var Consts = {};
+        $('body').on('click', function(evt)
+        {
+            if($(evt.target).is('.field-editor') || $(evt.target).is('.testrail-editor') || $(evt.target).parents().hasClass('fr-box') || $(evt.target).parents().hasClass('frolaAttachmentpop') || $(evt.target).parents().hasClass('attachments-new-dialog')  || $(evt.target).parents().hasClass('attachments-library') || $(evt.target).is('attachments-library') || $(evt.target).hasClass('dz-hidden-input') || $(evt.target).hasClass('attachment-block') || $(evt.target).parents().hasClass('attachment-info-details') || $(evt.target).parents().hasClass('dialog') || $(evt.target).hasClass('blockOverlay'))
+            {
+             return
+            }
+        });
+        $("input").on('focus', function (){});
+
+        if(window.location.search.indexOf("?/auth/login") !=0)
+        {
+            Consts.formConfirmLeaveMessage = 'You have changed one or more fields in this form. Are you sure you want to navigate away from this page? You would lose all changes you have made.';
+        }
+
+        App.Sidebar.init();
+App.InputSymbolsCounter.init();
+
+        var crsf_token = 'SBGEvXLT32VSFhD7gFot';
+
+        /*
+        *dynamic_obj varibale
+        *
+        */
+
+        var dynamic_obj = {
+            project_id: '',
+            text_drop: 'Drop files here to upload, or',
+            text_select:'Select Files',
+            library_title: 'Media Library',
+            library_add_new: 'Add New',
+            remove_title: 'Remove',
+            delete_title: 'Delete',
+            dialog_info: 'Maximum file size: 256 MB.',
+            add_attach: 'Attach',
+            cancel_title: 'Cancel',
+            isBDDAutocompleteEnabled: false        };
+
+        /*
+        * To display project text editor type
+        *text_format_type defined project wise textformat type
+        * seting_format_type global setting format type
+        */
+         text_format_type = '';
+        var seting_format_type = '';
+        if (seting_format_type != '' && text_format_type == '')
+        {
+            text_format_type = seting_format_type;
+        }
+        else if (text_format_type == '')
+        {
+            text_format_type = 'plaintext'
+        }
+        var currentProjectId = '' || "0";
+
+        // $('.testrail-editor').each(function()
+        // {
+        //     var editorId = $(this).attr('id');
+        //     if (editorId != undefined)
+        //     {
+        //         if ($('#testrail_cont-' + editorId).length < 1)
+        //         {
+        //                 $('#'+editorId).wrap('<div class="testrail-container" id="testrail_cont-' + editorId + '"></div>');
+        //         }
+        //     }
+        // });
+        if (currentProjectId == "0")
+        {
+            var nProject = getURL();
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+                if (editorId != undefined)
+                {
+                    getLocalStorgeData(nProject,"#"+editorId);
+                }
+            });
+
+        }
+        else
+        {
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+                if (editorId != undefined)
+                {
+                    getLocalStorgeData(currentProjectId,"#"+editorId);
+                }
+            });
+        }
+
+        /*
+        * Based on the editor type editor will display
+        */
+
+        if(text_format_type =="plaintext")
+        {
+            $('.testrail-editor').each(function()
+            {
+                var editorId = $(this).attr('id');
+
+                $(document).on('focus keyup blur', '.testrail-editor', function()
+                {
+                    var editor_id = $(this).attr('id');
+                    var content = $(this).text();
+                    if ($(this).is('span')) {
+                        content = content.trim();
+                    }
+                    $("#" + editor_id + "_mark").val(content);
+                });
+            });
+
+            $(document).on('paste', 'span.testrail-editor#description[contenteditable]', function (e) {
+                    e.preventDefault();
+                    if (window.clipboardData) {
+                        content = window.clipboardData.getData('Text');        
+                        if (window.getSelection) {
+                            var selObj = window.getSelection();
+                            var selRange = selObj.getRangeAt(0);
+                            selRange.deleteContents();                
+                            selRange.insertNode(document.createTextNode(content));
+                        }
+                    } else if (e.originalEvent.clipboardData) {
+                        content = (e.originalEvent || e).clipboardData.getData('text/plain');
+                        document.execCommand('insertText', false, content);
+                    }        
+                });
+        }
+
+    });
+    /*
+    * rename tag to
+    * @param object $obj
+    * @param string new_tag
+    */
+    function renameTag($obj, new_tag)
+    {
+        var obj = $obj.get(0);
+        var tag = obj.tagName.toLowerCase();
+        var tag_start = new RegExp('^<' + tag);
+        var tag_end = new RegExp('<\\/' + tag + '>$');
+        var new_html = obj.outerHTML.replace(tag_start, "<" + new_tag).replace(tag_end, '</' + new_tag + '>');
+        $obj.replaceWith(new_html);
+    }
+
+    function getURL()
+    {
+        var currentProjectId = '' || "0";
+
+        if (currentProjectId == "0")
+        {
+            var lhref = window.location.href;
+            lhrefSplit = lhref.split("/");
+            lEle=lhrefSplit[lhrefSplit.length - 1];
+            lEle1=lhrefSplit[lhrefSplit.length - 2];
+            lEle2=lhrefSplit[lhrefSplit.length - 3];
+            var newproject_id=lEle2+"_"+lEle1+"_"+lEle;
+            return  newproject_id;
+        }
+        else
+        {
+            return  currentProjectId;
+        }
+
+    }
+    function getLocalStorgeData(project_id,selector)
+    {
+        var key=project_id +"-"+selector;
+        var key1=project_id +"-"+selector+"-width";
+        let lData = JSON.parse(localStorage.getItem(key));
+        let lDataWid = JSON.parse(localStorage.getItem(key1));
+        if (lData !== null)
+        {
+            if($(selector).prev().hasClass('fr-box'))
+            {
+                $($(selector).prev().find('.fr-wrapper')[0]).height(lData-2);
+            }
+            else
+            {
+                $(selector).height(lData);
+            }
+
+        }
+        if (lDataWid !== null)
+        {
+            if($(selector).prev().hasClass('fr-box'))
+            {
+                $($(selector).prev().find('.fr-wrapper')[0]).width(lDataWid);
+                $($(selector).prev().find('.fr-toolbar')[0]).width(lDataWid);
+            }
+            else
+            {
+                $(selector).width(lDataWid);
+            }
+        }
+    }
+    function setLocalStorgeData (ht,lproject_id,selector,wt)
+    {
+        var key=lproject_id +"-"+selector;
+        var key1=lproject_id +"-"+selector +"-width";
+        var lData1= JSON.parse(localStorage.getItem(key));
+        var lDataWid= JSON.parse(localStorage.getItem(key1));
+        if (lData1 !== null &&  lData1 != 0)
+        {
+            // getLocalStorgeData(lproject_id,selector);
+            lData1 = ht;
+            localStorage.setItem(key, JSON.stringify(lData1));
+
+        }
+        else
+        {
+            var obj = ht;
+            if(ht == 0)
+            {
+                localStorage.setItem(key,$(selector).height());
+            }
+            else
+            {
+                localStorage.setItem(key, JSON.stringify(obj));
+            }
+
+        }
+        if (lDataWid !== null && lDataWid != 0)
+        {
+            // getLocalStorgeData(lproject_id,selector);
+            lDataWid = wt;
+            localStorage.setItem(key1, JSON.stringify(lDataWid));
+
+        }
+        else
+        {
+            var objWid = wt;
+            if(wt == 0)
+            {
+                localStorage.setItem(key1,$(selector).width());
+            }
+            else
+            {
+                localStorage.setItem(key1, JSON.stringify(objWid));
+            }
+        }
+    }
+
+    $(function()
+    {
+        activateResizeObserver();
+        $(window).on('resize', function(){
+        });
+    })
+
+    function activateResizeObserver()
+    {
+        // $('.testrail-container').each(function()
+        // {
+        //     var editorId = $(this).children('.testrail-editor').attr('id');
+        // });
+    }
+
+    $(document).ready(() => {
+        // $('.testrail-container').each(function()
+        // {
+        //     var editorId = $(this).children('.testrail-editor').attr('id');
+        //     var nProject = getURL();
+        //     if (editorId != undefined)
+        //     {
+        //         getLocalStorgeData(nProject,editorId);
+        //     }
+        // })
+    })
+
+    $(function() {
+        App.Sidebar.init();
+App.InputSymbolsCounter.init();
+        
+    });
+    window.defaultLanguage = "en";
+</script>
+
+
+
+
+<script>
+	$(window).ready(function() {
+		const updateUrl = (hash = '') => {
+			const url = new URL(window.location.href);
+			url.hash = hash;
+			window.history.replaceState({}, document.title, url.toString());
+		}
+
+		App.Tabs.activateDashboardTabs = (e, name) => {
+			App.Tabs.activate(e);
+			if (name === 'all') {
+				document.title = 'All Projects - TestRail';
+				updateUrl();
+				$('#all-projects-sidebar').show();
+				$('#cross-projects-sidebar').hide();
+				$('.content-header-icon').show();
+			} else {
+				if($("#cross-projects-sidebar").length!==0){
+					document.title = 'Cross-Project Reports - TestRail';
+					updateUrl('cross_project_reports');
+					$('#all-projects-sidebar').hide();
+					$('#cross-projects-sidebar').show();
+					$('.content-header-icon').hide();
+				}
+				
+			}
+		}
+
+		if (window.location.hash === '#cross_project_reports') {
+			App.Tabs.activateDashboardTabs($('.tab2'), 'cross');
+		} else {
+			App.Tabs.activateDashboardTabs($('.tab1'), 'all');
+		}
+
+				App.Controls.enableTabsBacktrackAccessibility();
+		App.Controls.enableTabsAccessibility({"1":"1","2":"2"}, '1', 1, '.tab-header .tab');
+		App.Controls.enableTabsAccessibility({"1":"1","2":"2"}, '2', 2, '.tab-header .tab');
+	});
+</script>
+
+<style>
+    .content-inner {
+        padding: 18px 0px 30px 0px;
+    }
+    .tab-frame {
+        border: 0px;
+    }
+    .tab-header>a {
+        height: 25px;
+        line-height: 15px;
+    }
+    .sidebar-h1::after {
+        border-bottom: 0px solid #AECADE;
+    }
+</style>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" aria-hidden="true"></div><div id="jstree-marker" style="display: none;" aria-hidden="true"></div><div class="fusioncharts-smartlabel-container" aria-hidden="true" role="presentation" style="position: absolute; top: -9999em; white-space: nowrap; padding: 0px; width: 1px; height: 1px; overflow: hidden;"></div><div style="position: absolute; height: auto; width: 300px; top: 88.7px; left: 527px; display: none;" tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="chartsRefineDialog" aria-labelledby="ui-dialog-title-chartsRefineDialog" id="dialog-ident-chartsRefineDialog" aria-hidden="true"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-dialog-title-chartsRefineDialog" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div class="dialog charts-refine-dialog ui-dialog-content ui-widget-content" id="chartsRefineDialog" data-testid="ChartMaintenanceFormchartsRefineDialog" style="display: block; width: auto; min-height: 110.8px; max-height: none; height: auto;">
+    <div class="dialog-title">
+        <span class="chartsRefineDialogTitle">Search and Filter</span>
+    </div>
+    <div id="charts-refine-form" class="dialogFormDefault" style="overflow-y: auto; max-height: 642px;">
+        <div class="dialog-body-refine">
+            <div class="charts-refine-left" data-testid="chartsRefineLeft">
+                                <div class="form-group">
+                    <div class="filterHeader">
+                        Select project(s):                    </div>
+                    <div class="charts-refine-searchable-wrapper">
+                        <select class="form-select searchable" multiple="" data-placeholder="Add project" name="project_ids" style="display: none;">
+                                                        <option value="130">QA eel</option>
+                                                        <option value="126">QA tnh</option>
+                                                        <option value="115">QA xax</option>
+                                                        <option value="110" selected="selected">zz</option>
+                                                    </select><div class="chosen-container chosen-container-multi" title="" style="width: 0px;"><ul class="chosen-choices" data-testid="chartMaintenanceChosenChoices">
+  <li class="search-choice" id="_c_3"><span>zz</span><a href="javascript:void(0)" class="search-choice-close" data-option-array-index="3"></a></li><li class="search-field">
+    <input class="chosen-search-input" type="text" autocomplete="off" value="Add project" style="width: 35px;">
+  </li>
+</ul>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <ul class="chosen-results" data-testid="compareVersionOption"></ul>
+</div></div>
+                    </div>
+                </div>
+                                <div class="form-group">
+                    <label>Choose a primary dimension:</label>
+                    <select id="charts-refine-primary-dimension" data-testid="chartsRefinePrimaryDimension" class="form-control form-control-small form-select" name="primary-dimension">
+                                                <option value="activity" selected="selected">Activity</option>
+                                                <option value="defects">Defects</option>
+                                                <option value="cases">Cases</option>
+                                                <option value="results">Results</option>
+                                            </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Choose a secondary dimension:                        <span class="form-description">(optional)</span>
+                    </label>
+                    <select id="charts-refine-secondary-dimension-activity" class="secondary-dimension form-control form-control-small form-select" name="secondary-dimension" style=""><option value="assignee">Assignee (person test is assigned to)</option><option value="case">Case</option><option value="changed_by">Changed By (person who actually made the change)</option><option value="defects">Defects</option><option value="milestone">Milestone</option><option value="plan">Plan</option><option value="run" selected="selected">Run</option><option value="status">Status</option><option value="test">Test</option></select><select id="charts-refine-secondary-dimension-defects" class="secondary-dimension form-control form-control-small form-select" name="secondary-dimension" style="display: none;"><option value="cases">Cases</option><option value="milestone">Milestone</option><option value="plan">Plan</option><option value="status">Result Status</option><option value="run" selected="selected">Run</option><option value="tests">Tests</option></select><select id="charts-refine-secondary-dimension-cases" class="secondary-dimension form-control form-control-small form-select" name="secondary-dimension" style="display: none;"><option value="created_by">Created By</option><option value="creation_date">Creation Date</option><option value="estimate">Estimate</option><option value="milestone">Milestone</option><option value="plan">Plan</option><option value="priority">Priority</option><option value="refs">References</option><option value="run" selected="selected">Run</option><option value="section">Section</option><option value="suite">Suite</option><option value="template">Template</option><option value="type">Type</option><option value="updated_by">Updated By</option><option value="updated_date">Updated Date</option><option value="custom_automation_type">Automation Type</option></select><select id="charts-refine-secondary-dimension-results" class="secondary-dimension form-control form-control-small form-select" name="secondary-dimension" style="display: none;"><option value="assignee">Assignee (person test is assigned to)</option><option value="cases">Cases</option><option value="defects">Defects</option><option value="milestone">Milestone</option><option value="plan">Plan</option><option value="run" selected="selected">Run</option><option value="status">Status</option><option value="section">Section</option><option value="suite">Suite</option><option value="template">Template</option><option value="type">Type</option><option value="tested_by">Tested By</option><option value="tested_on">Tested On</option></select>                    <div class="form-description">Only for use with stacked or grouped charts.</div>
+                </div>
+                <div class="form-group">
+                    <label>Choose additional search term(s):</label>
+                    <div class="charts-refine-searchable-wrapper">
+                        <select id="chartSearchResults" class="form-select" multiple="" data-placeholder="Add a search term..." name="search_term" data-no_results_text="No results match" style="display: none;">
+                                                    </select><div class="chosen-container chosen-container-multi" title="" id="chartSearchResults_chosen" style="width: 0px;"><ul class="chosen-choices" data-testid="chartMaintenanceChosenChoices">
+  <li class="search-field">
+    <input class="chosen-search-input default" type="text" autocomplete="off" value="Add a search term..." style="width: 177.15px;">
+  </li>
+</ul>
+<div class="chosen-drop" data-testid="compareVersionDropDwonButton">
+  <ul class="chosen-results" data-testid="compareVersionOption"></ul>
+</div></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Select a date range:</label>
+                                        <select id="dateRangeSelect" data-testid="chartDateRangeSelect" class="form-control">
+                        <option value="1">1 day</option>
+                                                <option value="5">5 days</option>
+                                                <option value="7">7 days</option>
+                                                <option value="14">14 days</option>
+                                                <option value="30">30 days</option>
+                                                <option value="-1" selected="selected">Custom</option>
+                    </select>
+                    <input type="text" placeholder="02/07/2021 - 02/11/2021" id="dateRangeField" data-testid="chartDateRangeField" class="chart-datepicker form-control" size="24" value="06/20/2025 - 06/25/2025">
+
+                </div>
+            </div>
+            <div class="charts-refine-right">
+                <div class="charts-refine-calendar hasDatepicker" id="dp1752846957895">
+                <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" tabindex="0" data-testid="uiDatepickerPrev" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" tabindex="0" data-testid="uiDatepickerNext" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title" data-testid="chartUiDatePickerTitle"><span class="ui-datepicker-month" data-testid="uiDatepickerMonth">July</span>&nbsp;<span class="ui-datepicker-year" data-testid="uiDatepickerYear">2025</span></div></div><table class="ui-datepicker-calendar" data-testid="uiDatepickerCalendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="1">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="2">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="3">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="4">4</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="5">5</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="6">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="7">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="8">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="9">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="10">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="11">11</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="12">12</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="13">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="14">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="15">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="16">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="17">17</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" tabindex="0" href="#" aria-current="true" data-date="18">18</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="19">19</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="20">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="21">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="22">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="23">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="24">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="25">25</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="26">26</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="27">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="28">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="29">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="30">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2025"><a class="ui-state-default" tabindex="0" href="#" aria-current="false" data-date="31">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table><div class="ui-datepicker-buttonpane ui-widget-content"><button type="button" class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" data-handler="today" data-event="click">Today</button></div></div></div>
+            </div>
+        </div>
+        <div class="button-group dialog-buttons-highlighted">
+            <button class="button button-left button-positive button-ok dialog-action-default" id="charts-refine-submit" data-testid="chartsRefineSubmit" type="submit">
+                Save Filters            </button>
+            <a id="charts-refine-cancel" class="button button-left button-negative button-cancel dialog-action-close" tabindex="0">
+                Cancel            </a>
+        </div>
+    </div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><button type="button" id="_pendo-badge_BoCMZErC0bdhVozX7wio373tPBA" data-layout="badgeBlank" style="z-index: 1; margin: 2px 0px 0px 4px; height: 14px; width: 35px; font-size: 0px; background: rgba(255, 255, 255, 0); padding: 0px; line-height: 1; min-width: auto; box-shadow: rgb(136, 136, 136) 0px 0px 0px 0px; border: 0px; float: none; vertical-align: baseline; cursor: pointer; position: absolute; top: 114px; left: 601px;" class="_pendo-badge _pendo-badge_" aria-hidden="true"><img id="pendo-image-badge-efff8a6e" style="display: block; height: 14px; width: 35px; box-shadow: rgb(136, 136, 136) 0px 0px 0px 0px; float: none; vertical-align: baseline;" src="https://pendo-static-5699730914541568.storage.googleapis.com/z3o6HR0vbnsz3SMwH4TchPc2mdo/guide-media-b7e199f4-0fdd-4850-9327-ca469f4d1597" alt="" data-_pendo-image-1="" class="_pendo-image _pendo-badge-image"></button><button aria-label="Open Resource Center, 4 new notifications" data-pendo-aria-label-alert-singular="Open Resource Center, {UNSEEN_COUNT} new notification" data-pendo-aria-label-alert-plural="Open Resource Center, {UNSEEN_COUNT} new notifications" aria-expanded="false" type="button" id="_pendo-badge_Hhf7H23vJ3hk1jdtR271Im-1A3o" data-layout="badgeResourceCenter" style="border-radius: 28px; inset: auto 10px 10px auto; margin: 0px; position: fixed; z-index: 19000; background: rgba(255, 255, 255, 0); padding: 0px; height: 56px; width: 56px; box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 6px 0px; border: 0px; float: none; vertical-align: text-bottom; cursor: pointer; display: inline-block;" class="_pendo-badge _pendo-resource-center-badge-container _pendo-badge_" aria-hidden="true" data-pendo-stashed-aria-label="Open Resource Center"><img id="pendo-image-badge-32cf3f20" style="display: block; height: 56px; width: 56px; padding: 0px; margin: 0px; line-height: 1; border: medium; box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 0px; float: none; vertical-align: baseline;" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NiA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxjaXJjbGUgY3g9IjI4IiBjeT0iMjgiIHI9IjI4IiBmaWxsPSIjNjVDMTc5Ii8+CiAgICA8cGF0aCBkPSJNMTkuMzUyNiAxOS43NzVDMTkuOTk5OCAxNy45MzU0IDIxLjI3NzEgMTYuMzg0MiAyMi45NTg0IDE1LjM5NjFDMjQuNjM5NiAxNC40MDggMjYuNjE2MyAxNC4wNDY4IDI4LjUzODQgMTQuMzc2NUMzMC40NjA0IDE0LjcwNjIgMzIuMjAzOCAxNS43MDU1IDMzLjQ1OTcgMTcuMTk3M0MzNC43MTU1IDE4LjY4OTIgMzUuNDAyOSAyMC41Nzc0IDM1LjQgMjIuNTI3NkMzNS40IDI4LjAzMjcgMjcuMTQyMyAzMC43ODUyIDI3LjE0MjMgMzAuNzg1MlYzMy44NjA3IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogICAgPHBhdGggZD0iTTI2Ljg5MjIgNDMuNjYyNEMyOC4xNDE0IDQzLjY2MjQgMjkuMTU0MSA0Mi42NDk3IDI5LjE1NDEgNDEuNDAwNUMyOS4xNTQxIDQwLjE1MTMgMjguMTQxNCAzOS4xMzg2IDI2Ljg5MjIgMzkuMTM4NkMyNS42NDMgMzkuMTM4NiAyNC42MzAzIDQwLjE1MTMgMjQuNjMwMyA0MS40MDA1QzI0LjYzMDMgNDIuNjQ5NyAyNS42NDMgNDMuNjYyNCAyNi44OTIyIDQzLjY2MjRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=" alt="" data-_pendo-image-1="" class="_pendo-image _pendo-badge-image _pendo-resource-center-badge-image"><div class=" pendo-resource-center-badge-notification-bubble" style="position: absolute; border-radius: 20px; line-height: 0px; height: 26px; box-sizing: content-box; background-color: rgb(3, 148, 116); top: -2px; left: -12px; padding: 0px 10px; margin-left: 0px; margin-top: 0px;"><div class=" pendo-notification-bubble-unread-count" style="font-weight: 400; font-family: inherit; height: 100%; position: relative; top: 50%; color: rgb(255, 255, 255); white-space: pre-wrap;">4</div></div></button><div id="pendo-base" data-layout="lightboxBlank" class="_pendo-step-container" style="visibility: visible;"><div id="pendo-g-5WE4zNKAttGY5L9rtyD7xFc0pvQ" data-vertical-alignment="Bottom Right Aligned" style="z-index: 300000; width: 430px; position: fixed; bottom: 20px; right: 20px; float: none; vertical-align: baseline; display: block; visibility: visible; margin-right: 0px; height: 455px;" class="_pendo-step-container-size"><div aria-modal="false" tabindex="-1" role="dialog" id="pendo-guide-container" style="background-color: rgb(255, 255, 255); border-radius: 4px; padding: 20px 20px 9px; position: relative; border: 0px solid rgb(89, 147, 188); box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px; float: none; vertical-align: baseline; display: block; max-width: none; max-height: none;" class="_pendo-step-container-styles"><div id="pendo-start-focus-bumper-1752846958970" class="pendo-start-focus-bumper" tabindex="0"></div><style type="text/css" scoped="scoped" id="pendo-focus-bumper-styles1752846958969" style="white-space: pre-wrap;">.pendo-start-focus-bumper{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;tabIndex:0!important;}.pendo-start-focus-bumper:hover{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;}.pendo-start-focus-bumper:focus{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;}.pendo-end-focus-bumper{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;tabIndex:0!important;}.pendo-end-focus-bumper:hover{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;}.pendo-end-focus-bumper:focus{margin:0!important;padding:0!important;outline:none!important;border:none!important;box-shadow:none!important;shadow:none!important;}</style><div id="pendo-text-08f87da8" style="text-align: left; font-size: 16px; color: rgb(228, 0, 109); margin: 0px; padding: 5px 0px 0px; line-height: 1; font-family: inherit; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; position: relative; display: block; overflow-wrap: break-word; float: none; vertical-align: baseline;" class="bb-text _pendo-text-custom" data-_pendo-text-custom-1=""><div id="pendo-text-cf326510" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline;" class="bb-text _pendo-simple-text" data-_pendo-simple-text-1=""><p id="pendo-text-520e51c6" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap;" class="bb-text _pendo-text-plain" data-_pendo-text-plain-1="">Tell Us How You Use AI in Testing</p></div></div><div id="pendo-text-795f2404" style="color: rgb(14, 55, 84); font-size: 30px; letter-spacing: 0px; line-height: 1.4; overflow-wrap: break-word; padding: 0px; position: relative; text-transform: none; font-family: barlow; font-weight: 600; text-decoration: none; text-align: left; margin: 10px 0px 15px; display: block; float: none; vertical-align: baseline;" class="bb-text _pendo-text-custom" data-_pendo-text-custom-2=""><div id="pendo-text-cc9be1db" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline;" class="bb-text _pendo-simple-text" data-_pendo-simple-text-2=""><p id="pendo-text-b5c2005a" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap;" class="bb-text _pendo-text-plain" data-_pendo-text-plain-2="">How are you using AI in your automation workflows?</p></div></div><div id="pendo-row-8b818838" data-pendo-display-flex="true" data-pendo-justify-content="flex-start" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px; position: static; float: none; vertical-align: baseline; display: block;" data-_pendo-row-1="" class="_pendo-row"><div id="pendo-text-237a9cda" style="color: rgb(60, 77, 107); font-size: 14px; letter-spacing: 0px; line-height: 1.4; overflow-wrap: break-word; padding: 0px; position: relative; text-transform: none; font-family: inherit; font-weight: 400; text-decoration: none; display: block; text-align: left; margin: 0px 0px 10px; width: inherit; float: none; vertical-align: baseline; max-width: 390px;" class="bb-text _pendo-text-paragraph" data-_pendo-text-paragraph-1=""><div id="pendo-text-e16463dc" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline;" class="bb-text _pendo-simple-text" data-_pendo-simple-text-5=""><p id="pendo-text-886790f5" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap; max-width: 390px;" class="bb-text _pendo-text-plain" data-_pendo-text-plain-3="">AI is becoming a bigger part of the software testing process, and we want to learn how it fits into your day-to-day work. </p><span id="pendo-text-ca89b933" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: initial; display: inline; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap;" class="bb-text _pendo-simple-text" data-_pendo-simple-text-3=""><br></span><p id="pendo-text-93d113e7" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap; max-width: 390px;" class="bb-text _pendo-text-plain" data-_pendo-text-plain-4="">We are running a new survey to better understand how testers use AI to support and accelerate test automation, from generating code to improving coverage and efficiency.</p><span id="pendo-text-32625dfa" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: initial; display: inline; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap;" class="bb-text _pendo-simple-text" data-_pendo-simple-text-4=""><br></span><p id="pendo-text-a5990292" style="font-size: inherit; text-align: inherit; color: inherit; padding: 0px; margin: 0px; line-height: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; text-transform: inherit; letter-spacing: inherit; position: relative; display: block; width: auto; overflow-wrap: break-word; float: none; vertical-align: baseline; white-space: pre-wrap; max-width: 390px;" class="bb-text _pendo-text-plain" data-_pendo-text-plain-5="">Take a few minutes to share your experience and help shape the future of AI in TestRail.</p></div></div></div><div id="pendo-row-1c0cb6d7" data-pendo-display-flex="true" data-pendo-justify-content="space-between" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px; position: static; float: none; vertical-align: baseline; display: block;" data-_pendo-row-2="" class="_pendo-row"><div class="pendo-mock-flexbox-row" style="display: block; position: relative; width: 100%; min-height: 68px;"><div style="display: inline-block; position: absolute; vertical-align: top; left: 0px;" class="pendo-mock-flexbox-element"><button id="pendo-button-9f0a8a47" class="bb-button _pendo-button-custom _pendo-button" style="display: block; color: rgb(66, 133, 244); font-weight: 400; letter-spacing: 0px; line-height: 1; position: relative; text-align: center; text-transform: none; min-width: 0px; background-color: rgba(255, 255, 255, 0); background-image: none; border-radius: 6px; font-family: Barlow; font-size: 14px; padding: 12px; white-space: pre-wrap; width: auto; margin: 10px 0px; overflow-wrap: break-word; border: 1px solid rgb(66, 133, 244); float: none; vertical-align: baseline;" type="button" data-_pendo-button-custom-1="" data-_pendo-button-1="">Remind Me Later</button></div><div style="display: inline-block; position: absolute; vertical-align: top; right: 0px;" class="pendo-mock-flexbox-element"><button role="link" id="pendo-button-83b58ae7" class="bb-button _pendo-button-custom _pendo-button" style="display: block; color: rgb(255, 255, 255); font-weight: 400; letter-spacing: 0px; line-height: 1; position: relative; text-align: center; text-transform: none; min-width: 0px; background-color: rgb(66, 133, 244); background-image: none; border-radius: 6px; font-family: Barlow; font-size: 14px; padding: 12px; white-space: pre-wrap; width: auto; margin: 10px 15px 20px 14px; overflow-wrap: break-word; border: 0px solid rgb(66, 133, 244); float: none; vertical-align: baseline;" type="button" data-_pendo-button-custom-2="" data-_pendo-button-2="">Start the Survey</button></div></div></div><button aria-label="Close" id="pendo-close-guide-303e7d26" style="min-width: 0px; line-height: 1; padding: 0px; border-radius: 0px; color: rgb(174, 202, 222); font-family: Helvetica; font-size: 24px; font-weight: 100; left: auto; right: 15px; top: 6px; z-index: 20; margin: 0px; position: absolute !important; background-color: rgba(255, 255, 255, 0); background-image: none; border: 0px; float: none; vertical-align: baseline; white-space: pre-wrap;" class="_pendo-close-guide">×</button><div id="pendo-end-focus-bumper-1752846958970" class="pendo-end-focus-bumper" tabindex="0"></div></div></div></div></body></html>
