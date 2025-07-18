@@ -15,6 +15,7 @@ public class TestCasesPage {
             TEST_CASES_BUTTON = $("[data-testid='navigateToCasesButton']"),
             TEST_CASES_TITLE = $("[data-testid='testCaseContentHeaderTitle']"),
             ADD_TEST_CASE_BUTTON = $(By.xpath("//div[@class='button-group']/a[not (@data-testid)]")),
+            SAVE_TEST_CASE_BUTTON = $($(By.id("accept"))),
             TEST_CASE_MODAL = $(By.id("noSectionContainer")),
             TEST_CASE_TITLE = $("[data-testid='addEditCaseTitle']"),
             ERROR_MESSAGE = $("[class='message message-error']");
@@ -44,14 +45,14 @@ public class TestCasesPage {
     @Step("Set values for test case")
     public TestCasesPage setTestCase(String testCaseTitle) {
         TEST_CASE_TITLE.setValue(testCaseTitle);
-        //   log.info("Test case is filled");
+        log.info("Test case is filled");
         return this;
     }
 
     @Step("Click on save test case button")
     public TestCasesPage clickSaveTestCaseButton() {
-        $(By.id("accept")).scrollIntoView(true);
-        $(By.id("accept")).submit();
+        SAVE_TEST_CASE_BUTTON.scrollIntoView(true);
+        SAVE_TEST_CASE_BUTTON.submit();
         log.info("'Save test case' button is clicked");
         return this;
     }

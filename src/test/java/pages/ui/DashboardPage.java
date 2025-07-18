@@ -8,7 +8,7 @@ import pages.page_settings.BasePage;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-//@Log4j2
+@Log4j2
 public class DashboardPage extends BasePage {
 
     private final SelenideElement
@@ -26,7 +26,7 @@ public class DashboardPage extends BasePage {
     @Step("Dashboard page is open")
     public DashboardPage isPageOpened() {
         DASHBOARD_TITLE.shouldBe(visible);
-        //     log.info("Dashboard page is open");
+        log.info("Dashboard page is open");
         return this;
     }
 
@@ -34,14 +34,14 @@ public class DashboardPage extends BasePage {
     public DashboardPage clickOnCreatedProject(String projectName) {
         String projectNameXPath = String.format(PROJECT_NAME_PATTERN, projectName);
         $x(projectNameXPath).click();
-        //     log.info("Project {} is open",projectName);
+        log.info("Project {} is open", projectName);
         return this;
     }
 
     @Step("Open admin page")
     public DashboardPage openAdminPage() {
         ADMIN_BUTTON.click();
-        //     log.info("Open admin page");
+        log.info("Open admin page");
         return this;
     }
 }
