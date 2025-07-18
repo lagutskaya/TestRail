@@ -9,7 +9,7 @@ import pages.page_settings.BasePage;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
-@Log4j2
+//@Log4j2
 public class HeaderPage extends BasePage {
 
     private final SelenideElement
@@ -21,14 +21,14 @@ public class HeaderPage extends BasePage {
     public HeaderPage logout() {
         USER_DROPDOWN.shouldBe(visible).click();
         LOG_OUT_BUTTON.shouldBe(visible).click();
-        log.info("User dropdown is open");
+        //   log.info("User dropdown is open");
         return this;
     }
 
     @Step("User is log out")
     public boolean userIslogout() {
         SIGN_IN_FORM.shouldBe(visible);
-        log.info("User is log out");
+        //   log.info("User is log out");
         return true;
     }
 }

@@ -12,7 +12,7 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
-@Log4j2
+//@Log4j2
 public class AddProjectPage {
 
     private final SelenideElement
@@ -31,19 +31,19 @@ public class AddProjectPage {
             (MODAL_WINDOW)
                     .shouldBe(visible, Duration.ofSeconds(3))
                     .click();
-            log.info("Modal window with ads is opened");
+            //  log.info("Modal window with ads is opened");
         } catch (ElementNotFound | TimeoutException e) {
-            log.info("Modal window with ads is closed");
+            //    log.info("Modal window with ads is closed");
         }
         ADD_PROJECT_BUTTON.click();
-        log.info("Project button is clicked");
+        // log.info("Project button is clicked");
         return this;
     }
 
     @Step("Verify project page is opened")
     public AddProjectPage isPageOpened() {
         ADD_PROJECT_TITLE.shouldBe(visible);
-        log.info("Create project page is opened");
+        // log.info("Create project page is opened");
         return this;
     }
 
@@ -52,11 +52,9 @@ public class AddProjectPage {
         PROJECT_NAME_FIELD.setValue(projectName);
         PROJECT_ANNOUNCEMENT_FIELD.setValue(projectAnnouncement);
         SHOW_ANNOUNCEMENT_CHECKBOX.click();
-        actions()
-                .scrollToElement(CREATE_PROJECT_BUTTON)
-                .perform();
+        CREATE_PROJECT_BUTTON.scrollIntoView(true);
         CREATE_PROJECT_BUTTON.click();
-        log.info("Project {} is created ", projectName);
+        //log.info("Project {} is created ", projectName);
         return this;
     }
 }

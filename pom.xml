@@ -12,11 +12,11 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <testng.version>7.11.0</testng.version>
-        <suitXmlFile>src/test/resources/CrossBrowserRun.xml</suitXmlFile>
         <assertj.version>4.0.0-M1</assertj.version>
         <selenide.version>7.9.3</selenide.version>
-        <surefire.version>3.5.3</surefire.version>
+        <surefire.version>3.1.2</surefire.version>
         <allure.version>2.24.0</allure.version>
         <aspectj.version>1.9.20.1</aspectj.version>
         <javafaker.version>1.0.2</javafaker.version>
@@ -28,7 +28,16 @@
         <rest-assured.version>5.5.5</rest-assured.version>
         <gson.version>2.13.1</gson.version>
 
+        <suitXmlFile>src/test/resources/CrossBrowserRun.xml</suitXmlFile>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Maven Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -63,7 +72,6 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>${allure.version}</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -79,6 +87,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -107,6 +116,7 @@
             <version>${gson.version}</version>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -122,6 +132,7 @@
                     </argLine>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>

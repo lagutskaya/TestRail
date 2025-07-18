@@ -2,19 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="CrossBrowser Run" parallel="tests">
     <listeners>
-        <listener class-name="utils.TestListener"/>
-        <listener class-name="utils.AnnotationTransformer"/>
-    </listeners>
-    <test name="Chrome">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="tests.ui.positive_tests.PositiveProjectTest"/>
-        </classes>
-    </test>
-    <test name="FireFox">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name="tests.ui.negative_tests.NegativeProjectTest"/>
-        </classes>
-    </test>
-</suite>
+        <!--     <listener class-name="utils.TestListener"/> -->
+              <listener class-name="utils.AnnotationTransformer"/>
+          </listeners>
+          <test name="Chrome">
+              <parameter name="browser" value="chrome"/>
+              <classes>
+                  <class name="tests.ui.positive_tests.PositiveProjectTest"/>
+              </classes>
+          </test>
+          <test name="FireFox">
+              <parameter name="browser" value="firefox"/>
+              <classes>
+                  <class name="tests.ui.negative_tests.NegativeProjectTest"/>
+              </classes>
+          </test>
+      </suite>

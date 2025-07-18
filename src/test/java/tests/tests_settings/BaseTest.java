@@ -26,8 +26,10 @@ public class BaseTest {
     public void setup(@Optional("chrome") String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             Configuration.browser = "chrome";
+            Configuration.browserSize = "1366x768";
         } else if (browser.equalsIgnoreCase("firefox")) {
             Configuration.browser = "firefox";
+            Configuration.browserSize = "1366x768";
         }
         Configuration.timeout = 10000;
         Configuration.clickViaJs = true;

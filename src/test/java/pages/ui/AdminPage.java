@@ -9,9 +9,8 @@ import pages.page_settings.BasePage;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.actions;
 
-@Log4j2
+//@Log4j2
 public class AdminPage extends BasePage {
 
     private final SelenideElement
@@ -29,14 +28,14 @@ public class AdminPage extends BasePage {
     @Step("Admin page is opened")
     public AdminPage isPageOpened() {
         PROJECTS_PAGE.shouldBe(visible);
-        log.info("Admin page is opened");
+        //    log.info("Admin page is opened");
         return this;
     }
 
     @Step("Open projects page")
     public AdminPage openProjectsPage() {
         PROJECTS_PAGE.click();
-        log.info("Projects page is opened");
+        //    log.info("Projects page is opened");
         return this;
     }
 
@@ -45,14 +44,14 @@ public class AdminPage extends BasePage {
         PROJECT_DELETE_BUTTON.click();
         CHECKBOX_DELETE_PROJECT.click();
         OK_BUTTON_IN_MODAL_FOR_DELETE_PROJECT.click();
-        log.info("Delete {} project ", projectName);
+        //     log.info("Delete {} project ", projectName);
         return this;
     }
 
     @Step("Project is deleted")
     public boolean isProjectDeleted() {
         SUCCESS_MESSAGE.shouldHave(text("Successfully deleted the project.")).shouldBe(visible);
-        log.info("Project is deleted");
+        //    log.info("Project is deleted");
         return true;
     }
 
@@ -61,18 +60,16 @@ public class AdminPage extends BasePage {
         EDIT_PROJECT_BUTTON.click();
         PROJECT_DESCRIPTION_FIELD.shouldBe(visible).clear();
         PROJECT_DESCRIPTION_FIELD.setValue(updatedProjectDescription);
-        actions()
-                .scrollToElement(SAVE_PROJECT_BUTTON)
-                .perform();
+        SAVE_PROJECT_BUTTON.scrollIntoView(true);
         SAVE_PROJECT_BUTTON.click();
-        log.info("The project description {} has been updated to {}", projectName, updatedProjectDescription);
+        //    log.info("The project description {} has been updated to {}", projectName, updatedProjectDescription);
         return this;
     }
 
     @Step("Project description is updated")
     public boolean isProjectDescriptionUpdated() {
         SUCCESS_MESSAGE.shouldHave(text("Successfully updated the project.")).shouldBe(visible);
-        log.info("Project description updated");
+        //    log.info("Project description updated");
         return true;
     }
 }

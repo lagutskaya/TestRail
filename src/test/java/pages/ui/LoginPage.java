@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-@Log4j2
+//@Log4j2
 public class LoginPage extends BasePage {
 
     private final SelenideElement
@@ -19,14 +19,14 @@ public class LoginPage extends BasePage {
     @Step("Open Login page")
     public LoginPage openPage() {
         open(base_url);
-        log.info("Open Login page");
+        // log.info("Open Login page");
         return this;
     }
 
     @Step("Login page is open")
     public LoginPage isPageOpened() {
         LOGIN_FIELD.shouldBe(visible);
-        log.info("Login page is open");
+        //  log.info("Login page is open");
         return this;
     }
 
@@ -34,7 +34,7 @@ public class LoginPage extends BasePage {
     public LoginPage login() {
         LOGIN_FIELD.setValue(user);
         PASSWORD_FIELD.setValue(password).submit();
-        log.info("User is log in");
+        //  log.info("User is log in");
         return this;
     }
 }
