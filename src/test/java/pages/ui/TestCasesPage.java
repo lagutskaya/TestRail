@@ -2,14 +2,13 @@ package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-// @Slf4j
-//TODO ПОСМОТРЕТЬ МБ ТУТ ПРОБЛЕМА
+@Log4j2
 public class TestCasesPage {
 
     private final SelenideElement
@@ -23,7 +22,7 @@ public class TestCasesPage {
     @Step("Test Cases page is opened")
     public TestCasesPage isPageOpened() {
         TEST_CASES_TITLE.shouldBe(visible);
-        //   log.info("Test cases page is opened");
+        log.info("Test cases page is opened");
         return this;
     }
 
@@ -31,14 +30,14 @@ public class TestCasesPage {
     public TestCasesPage openProjectsTestCases() {
         TEST_CASES_BUTTON.click();
         TEST_CASE_MODAL.shouldBe(visible);
-        //   log.info("Project's test cases is opened");
+        log.info("Project's test cases is opened");
         return this;
     }
 
     @Step("Click on add test case button")
     public TestCasesPage clickOnAddTestCaseButton() {
         ADD_TEST_CASE_BUTTON.click();
-        //   log.info("'Add test case' button is clicked");
+        log.info("'Add test case' button is clicked");
         return this;
     }
 
@@ -53,14 +52,14 @@ public class TestCasesPage {
     public TestCasesPage clickSaveTestCaseButton() {
         $(By.id("accept")).scrollIntoView(true);
         $(By.id("accept")).submit();
-        //    log.info("'Save test case' button is clicked");
+        log.info("'Save test case' button is clicked");
         return this;
     }
 
     @Step("Check invisibility of test case")
     public boolean isTestCaseIsNotCreated() {
         ERROR_MESSAGE.shouldHave(text("Field Title is a required field."));
-        //    log.info("Error message is visible");
+        log.info("Error message is visible");
         return true;
     }
 }
